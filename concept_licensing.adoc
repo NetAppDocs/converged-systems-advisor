@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: concept_licensing.html
+keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports
+summary: A license is required for each FlexPod converged infrastructure to unlock key functionality in Converged Systems Advisor. You can choose from a few licensing options.
+---
+
+= Licensing
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+A license is required for each FlexPod converged infrastructure to unlock key functionality in Converged Systems Advisor. You can choose from a few licensing options.
+
+No license:: You can deploy the agent, add converged infrastructures to the Converged Systems Advisor portal, and view a minimum amount of information for an infrastructure.
+
+Standard license:: Enables you to view complete information about a converged infrastructure, including a health dashboard, a map view, a compliance summary, and more.
+
+Premium license:: All the features of the Standard license, including alert notifications and reports that provide details about the status of your converged infrastructure.
+
+The Standard and Premium licenses include product support provided directly by NetApp.

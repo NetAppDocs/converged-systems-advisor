@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: concept_security.html
+keywords: security, data, transfer, privacy, encrypted, encryption, https, tls
+summary: Converged Systems Advisor collects configuration data about your FlexPod converged infrastructure to help you validate and monitor the system. You might want to understand how the data is collected, how it is transferred to NetApp, and how it is kept secure and private.
+---
+
+= Security
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Converged Systems Advisor collects configuration data about your FlexPod converged infrastructure to help you validate and monitor the system. You might want to understand how the data is collected, how it is transferred to NetApp, and how it is kept secure and private.
+
+== How the data is collected
+
+The Converged Systems Advisor agent requires read-only credentials to the devices in your FlexPod converged infrastructure. The credentials are encrypted and stored locally on the agent--they are not sent to the cloud-based portal.
+
+After you provide the credentials, the agent collects _configuration_ data from the devices. _Customer_ data that resides on the devices is never accessed or transferred. A representative sample of the configuration data that the agent collects includes the following:
+
+* Capacity
+* CPU and memory
+* Device connectivity
+* Device names and IDs
+* Device state
+* Firmware versions
+* IP addresses
+* iSCSI targets
+* Licenses
+* MAC addresses
+* Model numbers
+* Serial numbers
+
+== How the data is transferred
+
+After the agent discovers configuration data from your FlexPod converged infrastructure, it sends the data to the Converged Systems Advisor portal using HTTPS. The communication is encrypted using NetApp's TLS 1.2 certificate.
+
+image:diagram_data_transfer.gif[Shows an encrypted HTTPS connection from the agent to the portal.]
+
+== How the data is kept secure and private
+
+The configuration data resides within the NetApp network and is managed by NetApp IT. The data is secured by a data access layer that requires positive identification of each user who requests access.
+
+The user who deployed the agent can access the data from the Converged Systems Advisor portal by logging in with a NetApp Support Site account. This user has _owner_ privileges to the converged infrastructure. The owner can share the converged infrastructure with other users by granting read-only, write, or owner privileges. Those users must also have a registered NetApp Support Site account to log in to the portal.

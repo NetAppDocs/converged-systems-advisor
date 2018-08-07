@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: reference_limitations.html
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported
+summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+---
+
+= Known limitations
+:toc: macro
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+
+<list of known limitations>

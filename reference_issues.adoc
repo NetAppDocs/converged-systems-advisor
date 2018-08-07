@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: reference_issues.html
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported
+summary: Known issues identify problems that might prevent you from using this release of the product successfully.
+---
+
+= Known issues
+:toc: macro
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Known issues identify problems that might prevent you from using this release of the product successfully.
+
+<list of known issues>
+
+//There are no known issues in this release of Converged Systems Advisor.

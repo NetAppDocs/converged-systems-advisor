@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: reference_additional_info.html
+keywords: help, technical report, tr, 4036, best practices, imt, interoperability matrix, community, forum, docs, documentation, copyrights, notice
+summary: You can get help and find more information about Converged Systems Advisor through various resources.
+---
+
+= Where to get help and find more information
+:toc: macro
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can get help and find more information about Converged Systems Advisor through various resources.
+
+* https://www.netapp.com/us/media/tr-4036.pdf[NetApp Technical Report 4036: FlexPod Datacenter Technical Specifications^]
++
+Review the best practices and firmware requirements that Converged System Advisor compares your configurations against.
+
+* http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^]
++
+Verify support for your configuration.
+
+* http://community.netapp.com[NetApp Community^]
++
+Connect with peers, ask questions, exchange ideas, find resources, and share best practices.
+
+* http://docs.netapp.com[NetApp Product Documentation^]
++
+Search NetApp product documentation for instructions, resources, and answers.
+
+* https://csa.netapp.com/opensource[Open source information^]
++
+Review copyright statements and licenses for the software components that are distributed with  Converged System Advisor.

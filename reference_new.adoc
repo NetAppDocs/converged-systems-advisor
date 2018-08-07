@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: reference_new.html
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported
+summary: NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
+---
+
+= What's new in Converged Systems Advisor
+:toc: macro
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
+
+//toc::[]
+
+=== August 2018
+
+Converged Systems Advisor was completely redesigned to provide a new user interface and a more scalable architecture.

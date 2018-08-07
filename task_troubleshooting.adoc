@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: task_troubleshooting.html
+keywords: troubleshoot, agent, connectivity, browser, discover, error, internet, connection
+summary: You might need to troubleshoot issues as they occur.
+---
+
+= Troubleshooting Converged Systems Advisor
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You might need to troubleshoot issues as they occur.
+
+toc::[]
+
+== You cannot connect to the agent through a web browser
+
+You need to connect to the agent through a web browser to configure discovery of your FlexPod devices. If you cannot connect through a web browser, ensure that the agent has an outbound internet connection to csa.netapp.com. The agent application cannot start without an internet connection, which prevents you from accessing its web interface.
+
+If a proxy server is required for internet access, link:task_getting_started_customers.html#configuring-the-agent-to-use-a-proxy-server[configure the agent virtual machine to use it].
+
+== The agent cannot discover devices
+
+If the agent cannot discover a FlexPod device, verify the following:
+
+* Ensure that the agent has an open connection to each FlexPod device.
++
+To verify, ping each device from the agent.
+
+* Verify whether a local network is using the 172.17.x.x subnet.
++
+The agent uses the 172.17.x.x subnet internally. If a local network is using that same subnet, then you must change the subnet on the agent:
++
+. Log in to the agent's virtual machine console using the following credentials:
++
+** User name: cliuser
+** Password: NetApp1234
++
+. Add the file `/etc/docker/daemon.json` with the following contents:
++
+ { "bip": "172.44.x.x"}
++
+The bip address can be any non-conflicting IP address. It does not need to be in the 172 range.
+
+. Reboot the virtual machine.

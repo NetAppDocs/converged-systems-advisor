@@ -1,0 +1,147 @@
+---
+sidebar: sidebar
+permalink: task_monitoring.html
+keywords: reports, alerts, history, support contract, contracts, rules, fail, warning, pass, notifications, email
+summary: You can monitor your converged infrastructure by responding to alerts, reviewing a history of changes, and generating reports that provide a holistic view of an infrastructure.
+---
+
+= Monitoring your converged infrastructure
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can monitor your converged infrastructure by responding to alerts, reviewing a history of changes, and generating reports that provide a holistic view of an infrastructure.
+
+toc::[]
+
+== Reviewing alerts for failed rules and warnings
+
+Converged Systems Advisor continuously monitors your infrastructure and generates warnings and failures to ensure that the system is configured and performing to best practices.
+
+.Steps
+
+. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] and click *Rules*.
++
+The Rules page displays a summary of all rules. The status for each rule is either *Pass*, *Warning*, or *Fail*.
+
+. Click the filter icon in the Status column and select *Fail*, *Warning*, or both.
++
+image:screenshot_rules_filter.gif[Shows the filter icon which enables you to filter the table so it shows only the rules that passed, failed, or include warnings.]
+
+. Review details about individual rules by clicking the arrow next to the Status column.
++
+image:screenshot_rules_information.gif[Shows details about a rule, including the description, impact, and resolution.]
+
+. Follow the instructions in the resolution to fix the issue.
++
+If needed, <<Reviewing the history for an infrastructure,review the configuration history>> for the infrastructure to help you resolve the issue.
+
+.After you finish
+
+The status for the rules that you addressed should display as Passed after the agent's next collection period.
+
+== Reviewing the history for an infrastructure
+
+When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
+
+.Steps
+
+. Select a converged infrastructure.
+
+. Click *More > History*.
++
+image:screenshot_history_navigation.gif[Shows the More menu which includes the history option.]
+
+. Find where the status of the configuration went from green to either yellow or red.
++
+A green dot indicates that there are no issues. A yellow dot represents a warning, while a red dot represents a failure.
++
+The following image shows a single warning generated on the 27th of the month.
++
+image:screenshot_history_status.gif[Shows the More menu which includes the history option.]
++
+. Click the day to expand the details.
+
+. Click the timestamp to view the history at that point in time.
++
+image:screenshot_history_timestamp.gif[Shows the timestamp that appears after you select a specific date.]
++
+TIP: The amount of timestamps that appear for each day corresponds to the number of times that the agent collected data. For example, if you keep the default collection interval of 24 hours, you should see one timestamp.
+
+. If needed, view the history for the last time that the status was green.
++
+Comparing the data between the two collection periods can help you identify what changed.
+
+== Changing the notifications that you receive
+
+If you receive alert notifications that you do not plan to address, you can configure Converged Systems Advisor to stop sending email notifications for that rule. For example, enabling telnet is not recommended, but if you prefer to enable it, you can suppress the rule.
+
+.About this task
+
+You must have the Premium license to configure notifications.
+
+.Steps
+
+. Click *Rules*.
+
+. Find the rules that you are looking for by filtering the contents of the table.
+
+. Select one or more rows for rules that have a status of Warning or Fail and then click the *Alerts* icon.
++
+image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which enables you to suppress rules.]
+
+. Select a duration and then click *Submit*.
++
+TIP: If you want to enable the alerts, follow these same steps and select *End Suppression*.
+
+.Result
+
+Converged Systems Advisor no longer notifies you about the rule for the specified duration.
+
+== Generating reports
+
+If you have a Premium license, you can generate several reports that provide details about the status of your converged infrastructure: an inventory report, a health report, an assessment report, and more.
+
+.Steps
+
+. Click *Reports*.
+
+. Click *Generate* for a report.
+
+. Choose your options for the report:
+.. Select a converged infrastructure.
+.. Optionally change from the most recent data collection to a previous one.
+.. Choose how you want to view the report: in your browser, as a downloaded PDF, or via email.
++
+image:screenshot_reports_generate.gif[Shows the options for generating a report, which includes selecting a converged infrastructure and a snapshot, and then choosing how you want to view it.]
+
+.Result
+
+Converged Systems Advisor generates the report.
+
+== Adding support contracts
+
+You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID. This enables you to easily track the details in a central location so you know when to renew support contracts for each device.
+
+.Steps
+
+. Click *Select a CI* and select the converged infrastructure.
+
+. In the Support Contract widget, click *Edit contract*.
+
+. Select the *Start Date* and *End Date* and enter the *Contract ID*.
+
+. Click *Sumbit*.
+
+. Repeat the steps for each device in the configuration.
+
+.Result
+
+Converged Systems Advisor now displays the support contract details for each device. You can easily see which devices have active and expired support contracts.
+
+image:screenshot_support_contracts.gif[Shows four support contracts: one is expired and the other three are active.]

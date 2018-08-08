@@ -125,10 +125,9 @@ The agent requires internet access to function properly. If a proxy server is re
 
 .Steps
 
-. Log in to the agent's virtual machine console using the following credentials:
+. Log in to the agent's virtual machine console.
 +
-* User name: cliuser
-* Password: NetApp1234
+The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 
 . Set the http_proxy environment variable on the Debian virtual machine.
 
@@ -154,10 +153,9 @@ The agent creates a self-signed certificate when the virtual machine boots for t
 
 .Steps
 
-. Log in to the agent's virtual machine console using the following credentials:
+. Log in to the agent's virtual machine console.
 +
-* User name: cliuser
-* Password: NetApp1234
+The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 
 . Navigate to `/opt/csa/cert`
 

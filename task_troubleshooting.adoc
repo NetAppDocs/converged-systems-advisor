@@ -37,10 +37,9 @@ To verify, ping each device from the agent.
 +
 The agent uses the 172.17.x.x subnet internally. If a local network is using that same subnet, then you must change the subnet on the agent:
 +
-. Log in to the agent's virtual machine console using the following credentials:
+. Log in to the agent's virtual machine console.
 +
-** User name: cliuser
-** Password: NetApp1234
+The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 +
 . Add the file `/etc/docker/daemon.json` with the following contents:
 +

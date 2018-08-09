@@ -95,7 +95,7 @@ You must deploy the Converged Systems Advisor agent on a VMware ESXi server. The
 .Steps
 
 . <<Downloading and installing the agent,Download and install the agent>>
-. <<Configuring the agent to use a proxy server,If needed, configure the agent to use a proxy server>>
+. <<Setting up networking for the agent,Set up networking for the agent>>
 . <<Installing an SSL certificate on the agent,If needed, install an SSL certificate on the agent>>
 . <<Configuring the agent to discover your FlexPod infrastructure, Configure the agent to discover your FlexPod infrastructure>>
 
@@ -119,9 +119,9 @@ The agent is deployed as a VMware vSphere virtual machine from an Open Virtualiz
 
 . Install the agent by deploying the OVF template on the VMware ESXi server.
 
-=== Configuring the agent to use a proxy server
+=== Setting up networking for the agent
 
-The agent requires internet access to function properly. If a proxy server is required for internet access, then you must configure the agent virtual machine to use the proxy.
+You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and csa.netapp.com.
 
 .Steps
 
@@ -129,23 +129,37 @@ The agent requires internet access to function properly. If a proxy server is re
 +
 The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 
-. Set the http_proxy environment variable on the Debian virtual machine.
+. If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools.
++
+The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command `nmtui`.
++
+For help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
 
+. If your security policies dictate that the agent must be on one network to communicate with FlexPod devices and another network to communicate with the internet, add a second network interface in VCenter and configure the correct VLANs and IP addresses.
+
+. If a proxy server is required for internet access, configure the virtual machine to use the proxy by setting the http_proxy environment variable.
++
 *Example*
-
++
 The following steps configure the virtual machine to use an HTTP proxy running on 192.168.10.10 and port 3128.
-
-. Add `/etc/profile.d/proxy.sh` with the following contents:
-
++
+.. Add `/etc/profile.d/proxy.sh` with the following contents:
++
   export http_proxy=http://192.168.10.10:3128
 
-. Add `/etc/apt/apt.conf.d/99HttpProxy` with the following contents:
-
+.. Add `/etc/apt/apt.conf.d/99HttpProxy` with the following contents:
++
   Acquire::http::Proxy "http://192.168.10.10:3128";
 
-. Edit `/etc/wgetrc` by adding the following:
-
+.. Edit `/etc/wgetrc` by adding the following:
++
   http_proxy = http://192.168.10.10:3128
+
+. Verify connectivity by running the following CLI command from the agent:
++
+ curl -k https://www.netapp.com/us/index.aspx
++
+If the command fails, verify DNS settings. The agent virtual machine must have a valid DNS configuration and the ability to reach csa.netapp.com.
 
 === Installing an SSL certificate on the agent
 
@@ -154,8 +168,6 @@ The agent creates a self-signed certificate when the virtual machine boots for t
 .Steps
 
 . Log in to the agent's virtual machine console.
-+
-The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 
 . Navigate to `/opt/csa/cert`
 

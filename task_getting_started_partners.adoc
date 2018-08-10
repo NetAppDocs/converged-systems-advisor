@@ -52,7 +52,7 @@ image:screenshot_partner_customer_list.gif[Shows three converged infrastructures
 +
 *Example*
 +
-In this sample configuration, the firmware of the Nexus switches are not supported:
+In this sample configuration, the firmware versions of the Nexus switches are not supported:
 +
 image:screenshot_validation_interop.gif[Shows the interoperability section of the Deployment Validation Report. It includes two switches with unsupported firmware versions.]
 +

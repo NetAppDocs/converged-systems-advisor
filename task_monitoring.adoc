@@ -105,13 +105,13 @@ Converged Systems Advisor no longer notifies you about the rule for the specifie
 
 == Generating reports
 
-If you have a Premium license, you can generate several reports that provide details about the status of your converged infrastructure: an inventory report, a health report, an assessment report, and more.
+If you have a Premium license, you can generate several types of reports that provide details about the current status of your converged infrastructure: an inventory report, a health report, an assessment report, and more.
 
 .Steps
 
 . Click *Reports*.
 
-. Click *Generate* for a report.
+. Select a report and click *Generate*.
 
 . Choose your options for the report:
 .. Select a converged infrastructure.
@@ -124,7 +124,7 @@ image:screenshot_reports_generate.gif[Shows the options for generating a report,
 
 Converged Systems Advisor generates the report.
 
-== Adding support contracts
+== Tracking support contracts
 
 You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID. This enables you to easily track the details in a central location so you know when to renew support contracts for each device.
 
@@ -136,7 +136,7 @@ You can add details about support contracts for each device in a configuration: 
 
 . Select the *Start Date* and *End Date* and enter the *Contract ID*.
 
-. Click *Sumbit*.
+. Click *Submit*.
 
 . Repeat the steps for each device in the configuration.
 

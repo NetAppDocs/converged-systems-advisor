@@ -165,6 +165,13 @@ If the command fails, verify DNS settings. The agent virtual machine must have a
 
 The agent creates a self-signed certificate when the virtual machine boots for the first time. If required, you can delete that certificate and use your own SSL certificate.
 
+.About this task
+
+Converged Systems Advisor supports the following:
+
+* Any cipher compatible with OpenSSL version 1.0.1 or greater
+* TLS 1.1 and TLS 1.2
+
 .Steps
 
 . Log in to the agent's virtual machine console.

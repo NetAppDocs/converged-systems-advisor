@@ -16,6 +16,10 @@ summary: You can get help and find more information about Converged Systems Advi
 [.lead]
 You can get help and find more information about Converged Systems Advisor through various resources.
 
+* https://www.netapp.com/us/media/ds-3896.pdf[Converged Systems Advisor datasheet]
++
+For more details about the value that Converged Systems Advisor provides.
+
 * https://www.netapp.com/us/media/tr-4036.pdf[NetApp Technical Report 4036: FlexPod Datacenter Technical Specifications^]
 +
 Review the best practices and firmware requirements that Converged System Advisor compares your configurations against.

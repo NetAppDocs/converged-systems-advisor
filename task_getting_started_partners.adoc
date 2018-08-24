@@ -23,7 +23,7 @@ toc::[]
 
 Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
 
-Ask your customer to perform the following steps:
+Work with your customer to perform the following steps:
 
 . Prepare the environment.
 . Install and configure the Converged Systems Advisor agent.
@@ -61,6 +61,14 @@ Four validation rules also failed due to issues with switch connectivity:
 image:screenshot_validation_errors.gif[Shows the errors section of the Deployment Validation Report. The fabric interconnect does not uplink into the corresponding Nexus Fibre Channel fabric.]
 +
 Upgrading the firmware can correct the interoperability of the configuration and adding the links can correct the failed validation rules.
+
+. After you correct the issues, collect data to ensure that Converged Systems Advisor has the latest configuration data:
+
+.. Select the converged infrastructure.
+
+.. In the upper right, click *Collect*.
++
+image:screenshot_collect_button.gif[Shows the collect button in the upper right that is available after selecting a converged infrastructure.]
 
 . Generate the report again to verify that you have corrected the issues.
 

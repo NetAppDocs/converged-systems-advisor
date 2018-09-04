@@ -129,9 +129,9 @@ You must ensure that networking is set up correctly on the agent virtual machine
 +
 The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
 
-. If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools.
+. If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
 +
-The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command `nmtui`.
+The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[nmtui].
 +
 For help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
 
@@ -266,11 +266,9 @@ image:screenshot_settings.gif[Shows the settings menu, which contains a link to 
 
 . Click the image:screenshot_share_icon.gif[The icon for sharing an infrastructure.] icon.
 
-. Enter one or more email addresses next to the privileges that you want to provide.
+. Enter one or more email addresses next to the user role that you want to provide.
 +
-A user with Write privileges can change the name of a system, while an Owner can share the system with other users.
-+
-!!! Question from Ben: Is the statement above accurate? Are there other actions that these privileges provide? !!!
+link:reference_user_roles.html[View the differences between each role].
 +
 TIP: You can enter multiple email addresses in a single field by pressing *Enter* after the first email address.
 

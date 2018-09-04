@@ -15,10 +15,57 @@ summary: A license is required for each FlexPod converged infrastructure to unlo
 [.lead]
 A license is required to unlock features in Converged Systems Advisor. You can choose from a few licensing options for each FlexPod converged infrastructure.
 
-Standard license:: Enables you to view complete information about a converged infrastructure, including a health dashboard, a map view, a compliance summary, and more.
+[cols=3*,options="header",cols="12,64,24"]
+|===
 
-Premium license:: All the features of the Standard license, including alert notifications and reports that provide details about the status of your converged infrastructure.
+| License
+| Features
+| Terms
+
+| No license a|
+Limited version to demonstrate product capabilities:
+
+* Monitoring of FlexPod configurations for a 24-hour trial period
+* Health dashboards to view FlexPod best practice compliance
+* Limited inventory and remediation (available in licensed versions)
+
+a|
+* Free
+* Single use (24 hours)
+
+| Standard a|
+
+*	Continuous monitoring of FlexPod configurations
+*	Health dashboards to view FlexPod best practice compliance
+*	Firmware interoperability for compute, network, storage, and hypervisor
+*	Lifecycle management tools to identify changes and prevent configuration drift
+*	Detailed inventory and system diagrams for advanced troubleshooting
+
+a|
+* Licensed
+* Subscription based
+* Terms:
+** 12 months minimum
+** 60 months maximum
+
+| Premium a|
+
+All functionality included in the Standard license, plus:
+
+* Reporting
++
+Comprehensive, real-time reporting of FlexPod health, interoperability, and inventory
+* Notification and alerting
++
+Regular notifications of configuration health and changes in status
+
+a|
+* Licensed
+* Subscription based
+* Terms:
+** 12 months minimum
+** 60 months maximum
+
+|===
 
 The Standard and Premium licenses include product support provided directly by NetApp.
-
-You can use Converged Systems Advisor without a license, but you can only view a minimum amount of information for an infrastructure.

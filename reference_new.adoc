@@ -20,7 +20,7 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 == September 2018
 
-This release of Converged Systems Advisor includes the following features:
+This release of Converged Systems Advisor includes the following new features:
 
 * A new user interface and user experience to simplify customers' FlexPod operations
 * Health and best practices validation for VMware virtualization

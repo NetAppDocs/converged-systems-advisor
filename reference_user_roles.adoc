@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: reference_user_roles.html
+keywords: read only, write access, owner, privileges, access, security, privileges, roles
+summary: When you share a converged infrastructure with another user, you can provide read-only, write, or owner privileges.
+---
+
+= User roles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+When you share a converged infrastructure with another user, you must provide read-only, write, or owner privileges.
+
+[cols=4*,options="header",cols="25,25,25,25"]
+|===
+
+| Task
+| Read-only
+| Write
+| Owner
+
+| View a system |	Yes |	Yes |	Yes
+
+| Update a system's name |	No |	Yes |	Yes
+
+| Update support contract details |	No |	Yes | Yes
+
+| Edit the data collection interval | No | Yes | Yes
+
+| Request a new data collection |	No |	Yes |	Yes
+
+| Share a system | No |	Yes, with read only or write access |	Yes, with read only, write, or owner access
+
+| Modify the components of a system |	No |	No |	Yes
+
+| Delete a system |	No |	No |	Yes
+
+|===

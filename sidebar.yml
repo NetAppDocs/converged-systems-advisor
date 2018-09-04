@@ -19,6 +19,8 @@ entries:
         url: /concept_licensing.html
       - title: Security
         url: /concept_security.html
+      - title: User roles
+        url: /reference_user_roles.html
   - title: Getting started
     entries:
       - title: Getting started for customers

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept_licensing.html
 keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports
-summary: A license is required for each FlexPod converged infrastructure to unlock key functionality in Converged Systems Advisor. You can choose from a few licensing options.
+summary: A license is required to unlock features in Converged Systems Advisor. You can choose from a few licensing options for each FlexPod converged infrastructure.
 ---
 
 = Licensing
@@ -40,10 +40,10 @@ a|
 *	Firmware interoperability for compute, network, storage, and hypervisor
 *	Lifecycle management tools to identify changes and prevent configuration drift
 *	Detailed inventory and system diagrams for advanced troubleshooting
+* Support provided directly by NetApp
 
 a|
-* Licensed
-* Subscription based
+* Subscription-based license
 * Terms:
 ** 12 months minimum
 ** 60 months maximum
@@ -60,12 +60,9 @@ Comprehensive, real-time reporting of FlexPod health, interoperability, and inve
 Regular notifications of configuration health and changes in status
 
 a|
-* Licensed
-* Subscription based
+* Subscription-based license
 * Terms:
 ** 12 months minimum
 ** 60 months maximum
 
 |===
-
-The Standard and Premium licenses include product support provided directly by NetApp.

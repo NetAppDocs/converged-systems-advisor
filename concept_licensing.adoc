@@ -43,8 +43,8 @@ a|
 * Support provided directly by NetApp
 
 a|
-* Subscription-based license
-* Terms:
+Subscription-based license:
+
 ** 12 months minimum
 ** 60 months maximum
 
@@ -60,8 +60,8 @@ Comprehensive, real-time reporting of FlexPod health, interoperability, and inve
 Regular notifications of configuration health and changes in status
 
 a|
-* Subscription-based license
-* Terms:
+Subscription-based license:
+
 ** 12 months minimum
 ** 60 months maximum
 

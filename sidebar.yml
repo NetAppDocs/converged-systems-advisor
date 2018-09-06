@@ -7,8 +7,6 @@ entries:
         url: /reference_new.html
       - title: Known issues
         url: /reference_issues.html
-      - title: Known limitations
-        url: /reference_limitations.html
   - title: Concepts
     entries:
       - title: Overview
@@ -31,7 +29,5 @@ entries:
     url: /task_monitoring.html
   - title: Troubleshooting
     url: /task_troubleshooting.html
-  - title: FAQ
-    url: /reference_faq.html
   - title: Related links
     url: /reference_additional_info.html

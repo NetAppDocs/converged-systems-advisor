@@ -16,6 +16,45 @@ summary: Known issues identify problems that might prevent you from using this r
 [.lead]
 Known issues identify problems that might prevent you from using this release of the product successfully.
 
-<list of known issues>
+[cols=3*,options="header",cols="12,53,35"]
+|===
+
+| Bug ID
+| Description
+| Workaround
+
+| 4912
+| “Image Not Found” might display when viewing the system diagram for a converged infrastructure.
+| There is no workaround.
+
+| 4752
+| Converged Systems Advisor does not show the correct model number for Cisco UCS 5108.
+| Ignore the model number and obtain the correct information from Cisco UCS Manager.
+
+| 4671
+| Firefox might stop responding when browsing the Converged Systems Advisor portal.
+| Wait for the script to complete.
+
+| 4605
+| The agent interface allows you to modify the IP address of a device to an incorrect IP address. This can result in an unsupported infrastructure.
+| There is no workaround.
+
+| 4500
+| The Converged Systems Advisor portal does not log you out after the timeout interval has expired. You remain logged in, but cannot see your FlexPod systems.
+| Close your current browser session and then log in again from a new browser tab or window.
+
+| 3931
+|
+|
+
+| 3013
+| When viewing detailed information about a Nexus switch, the interfaces mapped to the VLAN do not match the actual device output.
+| There is no workaround.
+
+| 2794
+| Converged Systems Advisor displays "Pass" for the rule titled "VMware tools check" even though VMware tools was not installed on the virtual machine.
+| Ignore the rule status and obtain the correct information from the vCenter Server.
+
+|===
 
 //There are no known issues in this release of Converged Systems Advisor.

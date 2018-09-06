@@ -36,6 +36,6 @@ Connect with peers, ask questions, exchange ideas, find resources, and share bes
 +
 Search NetApp product documentation for instructions, resources, and answers.
 
-* https://csa.netapp.com/opensource[Open source information^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2849480[Notice^]
 +
-Review copyright statements and licenses for the software components that are distributed with  Converged System Advisor.
+Review copyright statements and licenses for the software components that are distributed with Converged System Advisor.

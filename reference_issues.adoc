@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference_issues.html
 keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported
-summary: Known issues identify problems that might prevent you from using this release of the product successfully.
+summary: Known issues identify problems that might prevent you from using the service successfully.
 ---
 
 = Known issues
@@ -14,7 +14,7 @@ summary: Known issues identify problems that might prevent you from using this r
 :imagesdir: ./media/
 
 [.lead]
-Known issues identify problems that might prevent you from using this release of the product successfully.
+Known issues identify problems that might prevent you from using the service successfully.
 
 [cols=3*,options="header",cols="12,53,35"]
 |===

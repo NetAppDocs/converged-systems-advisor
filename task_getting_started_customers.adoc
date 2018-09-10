@@ -131,7 +131,7 @@ The default user name is `csa` and the default password is `netapp`. You should 
 
 . If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
 +
-The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[nmtui].
+The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command nmtui (see the https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[man page^] for more details.)
 +
 For help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
 
@@ -236,7 +236,7 @@ image:screenshot_add_infrastructure.gif[Shows four devices selected in the table
 
 . Click *Add System* and then click *OK* in the confirmation dialog box.
 
-. When prompted, add your Converged Systems Advisor license to unlock key functionality:
+. When prompted, add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality:
 
 .. Enter the license key.
 
@@ -250,11 +250,11 @@ image:screenshot_license_active.gif[Shows an active license in the Licensing tab
 
 .Result
 
-Converged Systems Advisor adds the infrastructure to the portal with a license and starts collecting configuration data about each device. Wait a few minutes for the agent to collect information from the devices.
+Converged Systems Advisor adds the infrastructure to the portal and starts collecting configuration data about each device. Wait a few minutes for the agent to collect information from the devices.
 
 == Sharing an infrastructure with other users
 
-Sharing a converged infrastructure enables another person to log in to the Converged Systems Advisor portal so they can view and monitor the configuration. The person who you share the infrastructure with must have a https://mysupport.netapp.com[NetApp Support Site] account.
+Sharing a converged infrastructure enables another person to log in to the Converged Systems Advisor portal so they can view and monitor the configuration. The person who you share the infrastructure with must have a https://mysupport.netapp.com[NetApp Support Site^] account.
 
 .Steps
 
@@ -293,7 +293,7 @@ Each notification includes the following information:
 [horizontal]
 Collection Failures:: Alerts you when Converged Systems Advisor cannot collect data from a converged infrastructure.
 Offline Agent:: Alerts you when a Converged Systems Advisor agent is not online.
-Receive Digest:: Alerts you about failed rules that occurred on the previous day.
+Daily Alert Digest:: Alerts you about failed rules that occurred on the previous day.
 
 . Click *Save*.
 

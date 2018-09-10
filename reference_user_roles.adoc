@@ -15,6 +15,8 @@ summary: When you share a converged infrastructure with another user, you can pr
 [.lead]
 When you share a converged infrastructure with another user, you must provide read-only, write, or owner privileges.
 
+The following table identifies the tasks that each user role can perform.
+
 [cols=4*,options="header",cols="25,25,25,25"]
 |===
 
@@ -33,7 +35,7 @@ When you share a converged infrastructure with another user, you must provide re
 
 | Request a new data collection |	No |	Yes |	Yes
 
-| Share a system | No |	Yes, with read only or write access |	Yes, with read only, write, or owner access
+| Share a system | No |	Yes, with read-only or write access |	Yes, with read-only, write, or owner access
 
 | Modify the components of a system |	No |	No |	Yes
 

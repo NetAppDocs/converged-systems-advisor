@@ -16,7 +16,7 @@ summary: You can get help and find more information about Converged Systems Advi
 [.lead]
 You can get help and find more information about Converged Systems Advisor through various resources.
 
-* https://www.netapp.com/us/media/ds-3896.pdf[Converged Systems Advisor datasheet]
+* https://www.netapp.com/us/media/ds-3896.pdf[Converged Systems Advisor datasheet^]
 +
 For more details about the value that Converged Systems Advisor provides.
 

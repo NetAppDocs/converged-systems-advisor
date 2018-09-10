@@ -43,7 +43,7 @@ If needed, <<Reviewing the history for an infrastructure,review the configuratio
 
 .After you finish
 
-The status for the rules that you addressed should display as Passed after the agent's next collection period.
+The status for the rules that you addressed should display as Pass after the agent's next collection period.
 
 == Reviewing the history for an infrastructure
 
@@ -132,7 +132,7 @@ You can add details about support contracts for each device in a configuration: 
 
 . Click *Select a CI* and select the converged infrastructure.
 
-. In the Support Contract widget, click *Edit contract*.
+. In the Support Contract widget, click the *Edit contract* icon.
 
 . Select the *Start Date* and *End Date* and enter the *Contract ID*.
 

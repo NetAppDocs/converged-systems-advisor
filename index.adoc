@@ -28,8 +28,8 @@ link:reference_new.html[What's new in Converged Systems Advisor]
 
 * link:concept_overview.html[Overview]
 * link:concept_architecture.html[Architecture]
-* link:concept_licensing[Licensing]
+* link:concept_licensing.html[Licensing]
 
 == Get help and connect with peers
 
-https://community.netapp.com/t5/Converged-Infrastructure/ct-p/flexpod-and-converged-infrastructure[NetApp Community: Converged Infrastructure]
+https://community.netapp.com/t5/Converged-Infrastructure/ct-p/flexpod-and-converged-infrastructure[NetApp Community: Converged Infrastructure^]

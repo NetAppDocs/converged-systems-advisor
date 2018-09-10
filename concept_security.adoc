@@ -45,3 +45,5 @@ image:diagram_data_transfer.gif[Shows an encrypted HTTPS connection from the age
 The configuration data resides within the NetApp network and is managed by NetApp IT. The data is secured by a data access layer that requires positive identification of each user who requests access.
 
 The user who deployed the agent can access the data from the Converged Systems Advisor portal by logging in with a NetApp Support Site account. This user has _owner_ privileges to the converged infrastructure. The owner can share the converged infrastructure with other users by granting read-only, write, or owner privileges. Those users must also have a registered NetApp Support Site account to log in to the portal.
+
+link:reference_user_roles.html[Review the differences between read-only, write, and owner privileges].

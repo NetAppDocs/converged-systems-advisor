@@ -35,10 +35,6 @@ Known issues identify problems that might prevent you from using the service suc
 | Firefox might stop responding when browsing the Converged Systems Advisor portal.
 | Wait for the script to complete.
 
-| 4605
-| The agent interface allows you to modify the IP address of a device to an incorrect IP address. This can result in an unsupported infrastructure.
-| There is no workaround.
-
 | 4500
 | The Converged Systems Advisor portal does not log you out after the timeout interval has expired. You remain logged in, but cannot see your FlexPod systems.
 | Close your current browser session and then log in again from a new browser tab or window.

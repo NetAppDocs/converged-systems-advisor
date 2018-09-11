@@ -24,4 +24,4 @@ This release of Converged Systems Advisor includes the following new features:
 
 * A new user interface and user experience to simplify customers' FlexPod operations
 * Health and best practices validation for VMware virtualization
-* Coverage for Cisco MDS switches with expanded Fibre Channel support
+* Support for Cisco MDS switches with expanded Fibre Channel support

@@ -57,23 +57,17 @@ When you receive an alert about a failed rule, you can view a history of what ch
 +
 image:screenshot_history_navigation.gif[Shows the More menu which includes the history option.]
 
-. Find where the status of the configuration went from green to either yellow or red.
+. Click a day on the calendar to view the number of warnings and failures that were identified during each data collection.
 +
-A green dot indicates that there are no issues. A yellow dot represents a warning, while a red dot represents a failure.
+TIP: The number that appears for each day corresponds to the number of times that the agent collected data. For example, if you keep the default collection interval of 24 hours, you should see one collection per day.
 +
-The following image shows a single warning generated on the 27th of the month.
+The following image shows a single collection on the 27th of the month.
 +
-image:screenshot_history_status.gif[Shows the More menu which includes the history option.]
-+
-. Click the day to expand the details.
+image:screenshot_history_status.gif[Shows the number one and one yellow dot on the 27th of the month.]
 
-. Click the timestamp to view the history at that point in time.
-+
-image:screenshot_history_timestamp.gif[Shows the timestamp that appears after you select a specific date.]
-+
-TIP: The amount of timestamps that appear for each day corresponds to the number of times that the agent collected data. For example, if you keep the default collection interval of 24 hours, you should see one timestamp.
+. To view more details about the data that was collected, click *Go to CI Dashboard* for a collection.
 
-. If needed, view the history for the last time that the status was green.
+. If needed, view the history for the last time that no warnings or failures were identified.
 +
 Comparing the data between the two collection periods can help you identify what changed.
 

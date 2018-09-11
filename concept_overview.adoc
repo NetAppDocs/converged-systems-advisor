@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept_overview.html
-keywords: converged systems advisor, netapp, overview, concepts, features, use case
+keywords: converged systems advisor, netapp, overview, concepts, features, use case, video, value
 summary: Converged Systems Advisor validates the deployment of your FlexPod infrastructure and provides continuous monitoring and notifications to ensure business continuity.
 ---
 

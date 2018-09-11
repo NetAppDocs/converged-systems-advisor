@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept_architecture.html
-keywords: architecture, diagram, components, flexpod, agent, portal
+keywords: architecture, diagram, components, flexpod, agent, portal, cloud, on premise
 summary: Converged Systems Advisor is a software-as-a-service (SaaS) platform that consists of an on-premises agent and a cloud-based portal.
 ---
 

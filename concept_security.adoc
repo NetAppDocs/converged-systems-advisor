@@ -1,11 +1,13 @@
 ---
 sidebar: sidebar
 permalink: concept_security.html
-keywords: security, data, transfer, privacy, encrypted, encryption, https, tls
+keywords: security, data, transfer, privacy, encrypted, encryption, https, tls, customer, business
 summary: Converged Systems Advisor collects configuration data about your FlexPod converged infrastructure to help you validate and monitor the system. You might want to understand how the data is collected, how it is transferred to NetApp, and how it is kept secure and private.
 ---
 
 = Security
+:toc: macro
+:toclevels: 1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,6 +16,8 @@ summary: Converged Systems Advisor collects configuration data about your FlexPo
 
 [.lead]
 Converged Systems Advisor collects configuration data about your FlexPod converged infrastructure to help you validate and monitor the system. You might want to understand how the data is collected, how it is transferred to NetApp, and how it is kept secure and private.
+
+toc::[]
 
 == How the data is collected
 

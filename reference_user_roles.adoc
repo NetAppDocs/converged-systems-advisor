@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference_user_roles.html
-keywords: read only, write access, owner, privileges, access, security, privileges, roles
+keywords: read only, write, owner, privileges, access, security, roles
 summary: When you share a converged infrastructure with another user, you can provide read-only, write, or owner privileges.
 ---
 

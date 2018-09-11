@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference_issues.html
-keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported, release notes
 summary: Known issues identify problems that might prevent you from using the service successfully.
 ---
 
@@ -44,8 +44,8 @@ Known issues identify problems that might prevent you from using the service suc
 | Close your current browser session and then log in again from a new browser tab or window.
 
 | 3931
-|
-|
+| When viewing details about a network switch, the Overview pane provides a visual representation of the status of each port. The color displayed for the port status can be misleading. For example, a red status typically indicates an error, but it can appear even when a port is not in use.
+| There is no workaround.
 
 | 3013
 | When viewing detailed information about a Nexus switch, the interfaces mapped to the VLAN do not match the actual device output.

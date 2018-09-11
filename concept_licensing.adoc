@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept_licensing.html
-keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports
+keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports, term, subscription, reporting
 summary: A license is required to unlock features in Converged Systems Advisor. You can choose from a few licensing options for each FlexPod converged infrastructure.
 ---
 

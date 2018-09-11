@@ -23,7 +23,7 @@ toc::[]
 
 == Preparing your environment
 
-Preparing your environment includes verifying support for your configuration, creating read-only accounts for the agent, and registering for a NetApp Support Site account.
+Preparing your environment includes verifying support for your configuration, creating accounts for the agent, and registering for a NetApp Support Site account.
 
 .Steps
 
@@ -40,7 +40,7 @@ To minimize bandwidth usage, NetApp recommends installing the agent in the same 
 * The agent must have connectivity to each FlexPod component so it can collect configuration data.
 * The agent also requires an outbound internet connection to communicate with the Converged Systems Advisor portal (csa.netapp.com).
 
-. <<Creating read-only accounts on FlexPod devices,Create read-only accounts on each FlexPod component>>.
+. <<Creating accounts on FlexPod devices,Create accounts on each FlexPod component>>.
 +
 The agent requires credentials to collect configuration data. You must provide the credentials when you configure the agent.
 
@@ -48,9 +48,9 @@ The agent requires credentials to collect configuration data. You must provide t
 +
 A NetApp Support Site account is required to configure the agent and to access the portal.
 
-=== Creating read-only accounts on FlexPod devices
+=== Creating accounts on FlexPod devices
 
-You must set up a read-only account in Cisco UCS Manager, on your Cisco Nexus switches, and on your NetApp storage. The agent uses these accounts to collect configuration data from each device.
+You must set up a read-only account in Cisco UCS Manager and on your Cisco Nexus switches. An admin account is required for ONTAP systems. The agent uses these accounts to collect configuration data from each device.
 
 .Steps
 
@@ -76,7 +76,7 @@ TIP: All new users are read-only by default.
 +
  copy running configuration startup configuration
 
-. Create a read-only account for ONTAP:
+. Create an admin account for ONTAP:
 
 .. Log in to OnCommand System Manager and click the settings icon:
 +
@@ -84,7 +84,7 @@ image:screenshot_system_manager_settings.gif[The settings icon in System Manager
 
 .. On the Users page, click *Add*.
 
-.. Enter a user name and password and add *ssh* and *ontapi* as user login methods with read-only access.
+.. Enter a user name and password and add *ssh* and *ontapi* as user login methods with admin access.
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 
@@ -202,7 +202,7 @@ You must configure the agent to collect configuration data from each device in y
 
 .. Enter the IP address or host name of the device.
 
-.. Enter the user name and password of the read-only account that you previously created for this device.
+.. Enter the user name and password of the account that you previously created for this device.
 
 .. Click *Add device*.
 +

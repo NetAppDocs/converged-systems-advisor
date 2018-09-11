@@ -21,7 +21,7 @@ toc::[]
 
 == How the data is collected
 
-The Converged Systems Advisor agent requires read-only credentials to the devices in your FlexPod converged infrastructure. The credentials are encrypted and stored locally on the agent--they are not sent to the cloud-based portal.
+The Converged Systems Advisor agent requires credentials to access the devices in your FlexPod converged infrastructure. Read-only credentials are required for Cisco UCS and Nexus switches, while admin credentials are required for ONTAP. The credentials are encrypted and stored locally on the agent--they are not sent to the cloud-based portal.
 
 After you provide the credentials, the agent collects _configuration_ data from the devices. _Customer_ data that resides on the devices is never accessed or transferred. A representative sample of the configuration data that the agent collects includes the following:
 

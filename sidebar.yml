@@ -1,0 +1,33 @@
+entries:
+  - title: Converged Systems Advisor docs
+    url: /index.html
+  - title: Release notes
+    entries:
+      - title: What's new
+        url: /reference_new.html
+      - title: Known issues
+        url: /reference_issues.html
+  - title: Concepts
+    entries:
+      - title: Overview
+        url: /concept_overview.html
+      - title: Architecture
+        url: /concept_architecture.html
+      - title: Licensing
+        url: /concept_licensing.html
+      - title: Security
+        url: /concept_security.html
+      - title: User roles
+        url: /reference_user_roles.html
+  - title: Getting started
+    entries:
+      - title: Getting started for customers
+        url: /task_getting_started_customers.html
+      - title: Getting started for partners
+        url: /task_getting_started_partners.html
+  - title: Monitoring your infrastructure
+    url: /task_monitoring.html
+  - title: Troubleshooting
+    url: /task_troubleshooting.html
+  - title: Related links
+    url: /reference_additional_info.html

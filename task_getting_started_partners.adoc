@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+permalink: task_getting_started_partners.html
+keywords: partner, validate, deployment validation
+summary: If you are a NetApp partner, you can get started with Converged Systems Advisor by working with your customer to deploy the agent and set up the portal before you run a deployment validation.
+---
+
+= Getting started with Converged Systems Advisor for partners
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you are a NetApp partner, you can get started with Converged Systems Advisor by working with your customer to deploy the agent and set up the portal before you run a deployment validation.
+
+toc::[]
+
+== Getting Converged Systems Advisor up and running in your customer's environment
+
+Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
+
+Work with your customer to perform the following steps:
+
+. Prepare the environment.
+. Install and configure the Converged Systems Advisor agent.
+. Add the converged infrastructure to the Converged Systems Advisor portal.
+. Share the converged infrastructure with you.
+
+For instructions, see link:task_getting_started_customers.html[Getting started with Converged Systems Advisor for customers].
+
+== Validating a converged infrastructure deployment
+
+NetApp partners can run a deployment validation to verify that a FlexPod converged infrastructure is configured correctly. Partners can then hand off the report to customers.
+
+.Steps
+
+. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^].
+
+. Expand the customer's configuration from the Customer List.
++
+image:screenshot_partner_customer_list.gif[Shows three converged infrastructures for a customer.]
+
+. Under Deployment Validation Report, click *Generate*.
+
+. Choose whether you want to view the report in your browser, in a PDF, or via email.
+
+. Review the report and correct any interoperability issues and deployment validation errors.
++
+*Example*
++
+In this sample configuration, the firmware versions of the Nexus switches are not supported:
++
+image:screenshot_validation_interop.gif[Shows the interoperability section of the Deployment Validation Report. It includes two switches with unsupported firmware versions.]
++
+Four validation rules also failed due to issues with switch connectivity:
++
+image:screenshot_validation_errors.gif[Shows the errors section of the Deployment Validation Report. The fabric interconnect does not uplink into the corresponding Nexus Fibre Channel fabric.]
++
+Upgrading the firmware can correct the interoperability of the configuration and adding the links can correct the failed validation rules.
+
+. After you correct the issues, collect data to ensure that Converged Systems Advisor has the latest configuration data:
+
+.. Select the converged infrastructure.
+
+.. In the upper right, click *Collect*.
++
+image:screenshot_collect_button.gif[Shows the collect button in the upper right that is available after selecting a converged infrastructure.]
+
+. Generate the report again to verify that you have corrected the issues.
+
+. Send the final Deployment Validation Report to your customer.
+
+.Result
+
+The converged infrastructure is now set up according to best practices.

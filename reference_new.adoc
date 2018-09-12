@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: reference_new.html
+keywords: new, features, whats new, enhancements, release notes
+summary: NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
+---
+
+= What's new in Converged Systems Advisor
+:toc: macro
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
+
+//toc::[]
+
+== September 2018
+
+This release of Converged Systems Advisor includes the following new features:
+
+* A new user interface and user experience to simplify customers' FlexPod operations
+* Health and best practices validation for VMware virtualization
+* Support for Cisco MDS switches with expanded Fibre Channel support

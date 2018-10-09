@@ -27,10 +27,6 @@ Known issues identify problems that might prevent you from using the service suc
 | “Image Not Found” might display when viewing the system diagram for a converged infrastructure.
 | There is no workaround.
 
-| 4752
-| Converged Systems Advisor does not show the correct model number for Cisco UCS 5108.
-| Ignore the model number and obtain the correct information from Cisco UCS Manager.
-
 | 4671
 | Firefox might stop responding when browsing the Converged Systems Advisor portal.
 | Wait for the script to complete.

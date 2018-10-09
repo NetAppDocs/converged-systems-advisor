@@ -203,6 +203,8 @@ You must configure the agent to collect configuration data from each device in y
 .. Enter the IP address or host name of the device.
 
 .. Enter the user name and password of the account that you previously created for this device.
++
+If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
 
 .. Click *Add device*.
 +

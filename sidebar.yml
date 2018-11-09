@@ -25,6 +25,8 @@ entries:
         url: /task_getting_started_customers.html
       - title: Getting started for partners
         url: /task_getting_started_partners.html
+      - title: Setting a static IP on the agent
+        url: /task_setting_static_ip.html
   - title: Monitoring your infrastructure
     url: /task_monitoring.html
   - title: Troubleshooting

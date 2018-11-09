@@ -131,9 +131,11 @@ The default user name is `csa` and the default password is `netapp`. You should 
 
 . If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
 +
-The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command nmtui (see the https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[man page^] for more details.)
+link:task_setting_static_ip.html[Click here for detailed instructions].
 +
-For help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
+The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command nmtui (see the https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[man page^] for more details).
++
+For additional help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
 
 . If your security policies dictate that the agent must be on one network to communicate with FlexPod devices and another network to communicate with the internet, add a second network interface in VCenter and configure the correct VLANs and IP addresses.
 

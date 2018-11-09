@@ -1,0 +1,54 @@
+---
+sidebar: sidebar
+permalink: task_setting_static_ip.html
+keywords: networking, ip address, static, static ip, agent
+summary: If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
+---
+
+= Setting a static IP address on the agent
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
+
+.Steps
+
+. Log in to the agent's virtual machine console using the VMware vSphere client.
++
+The default user name is *csa* and the default password is *netapp*. You should change the default password after you log in.
+
+. Enter `su –` at the csa prompt to become root, using the same *netapp* password.
+
+. Enter `nmutil` at the root shell prompt.
++
+You should now see the NetworkManager TUI.
++
+image:screenshot_nmutil.gif[1]
+
+. Press *Tab* until you reach the *OK* prompt and press *Enter*.
+
+. Keep *Wired connection 1* selected, press *Tab* to reach the *Edit* prompt, and then press *Enter*.
++
+image:screenshot_nmutil_edit.gif[1]
+
+. Press *Tab* until you reach the *Show* menu for IPv4 connections, and then press *Enter*.
++
+image:screenshot_nmutil_ipv4_show.gif[1]
+
+. Highlight *Add* and enter the required information for each parameter.
++
+Be sure to enter the address in the form of address/mask, as shown below.
++
+image:screenshot_nmutil_ipv4.gif[1]
+
+. Press *Tab* until you reach the *OK* prompt and press *Enter*.
+
+. Go back to the main menu, highlight *Quit*, and then press *Enter*.
+
+. Reboot the agent.

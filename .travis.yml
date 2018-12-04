@@ -25,6 +25,7 @@ before_install:
 - ES_INDEX_URL="https\:\/\/"$ES_AUTH"\@"$ES_API
 - SK_ES_URL="https\:\/\/"$ES_API$SK_INDEXES
 - sed -i 's/url\:\s*\"localhost\:9200\"/url\:\ \"'$ES_INDEX_URL'\"/g' ./_config.yml
+- sed -i 's/type\:\s*cloud/type\:\ saas/g' ./_config.yml
 - sed -i 's/index\_name\:\s*.*/index\_name\:\ \"'$ES_INDEX'\"/g' ./_config.yml
 - sed -i 's/REPO\_URL/'$REPO_NAME'/g' ./webpack/components/Search.js
 - sed -i 's/ES\_AUTH/\"'$ES_AUTH'\"/g' ./webpack/components/Search.js

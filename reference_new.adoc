@@ -6,7 +6,6 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 ---
 
 = What's new in Converged Systems Advisor
-:toc: macro
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,8 +14,6 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
-
-//toc::[]
 
 == September 2018
 

@@ -6,8 +6,6 @@ summary: To get started with Converged Systems Advisor, you must prepare your en
 ---
 
 = Getting started with Converged Systems Advisor for customers
-:toc: macro
-:toclevels: 1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,8 +16,6 @@ summary: To get started with Converged Systems Advisor, you must prepare your en
 To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add a converged infrastructure to the portal.
 
 You might want to link:concept_architecture.html[learn how Converged Systems Advisor works] before you get started.
-
-toc::[]
 
 == Preparing your environment
 

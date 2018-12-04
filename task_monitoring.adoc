@@ -6,8 +6,6 @@ summary: You can monitor your converged infrastructure by responding to alerts, 
 ---
 
 = Monitoring your converged infrastructure
-:toc: macro
-:toclevels: 1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,8 +14,6 @@ summary: You can monitor your converged infrastructure by responding to alerts, 
 
 [.lead]
 You can monitor your converged infrastructure by responding to alerts, reviewing a history of changes, and generating reports that provide a holistic view of an infrastructure.
-
-toc::[]
 
 == Reviewing alerts for failed rules and warnings
 

@@ -6,8 +6,6 @@ summary: If you are a NetApp partner, you can get started with Converged Systems
 ---
 
 = Getting started with Converged Systems Advisor for partners
-:toc: macro
-:toclevels: 1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,8 +14,6 @@ summary: If you are a NetApp partner, you can get started with Converged Systems
 
 [.lead]
 If you are a NetApp partner, you can get started with Converged Systems Advisor by working with your customer to deploy the agent and set up the portal before you run a deployment validation.
-
-toc::[]
 
 == Getting Converged Systems Advisor up and running in your customer's environment
 

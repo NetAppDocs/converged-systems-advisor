@@ -6,8 +6,6 @@ summary: If your environment does not have a DHCP server, you can set a static I
 ---
 
 = Setting a static IP address on the agent
-:toc: macro
-:toclevels: 1
 :hardbreaks:
 :nofooter:
 :icons: font

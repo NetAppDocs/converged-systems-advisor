@@ -6,7 +6,6 @@ summary: Known issues identify problems that might prevent you from using the se
 ---
 
 = Known issues
-:toc: macro
 :hardbreaks:
 :nofooter:
 :icons: font

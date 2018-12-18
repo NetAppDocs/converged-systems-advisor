@@ -23,7 +23,7 @@ The default user name is *csa* and the default password is *netapp*. You should 
 
 . Enter `su –` at the csa prompt to become root, using the same *netapp* password.
 
-. Enter `nmutil` at the root shell prompt.
+. Enter `nmtui` at the root shell prompt.
 +
 You should now see the NetworkManager TUI.
 +

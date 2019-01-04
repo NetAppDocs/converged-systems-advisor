@@ -192,23 +192,17 @@ You must configure the agent to collect configuration data from each device in y
 
 . Log in to the agent by entering the user name and password of your NetApp Support Site account.
 
-. Add the FlexPod devices that you want the agent to discover:
-
-.. Click *Add a device*.
-
-.. Select a device type.
-
-.. Enter the IP address or host name of the device.
-
-.. Enter the user name and password of the account that you previously created for this device.
+. Add the FlexPod devices that you want the agent to discover.
 +
-If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
+You have two options:
 
-.. Click *Add device*.
+.. Click *Add a device* to enter details about your FlexPod devices, one by one.
+.. Click *Import devices* to fill out and upload a CSV template that includes details about all devices.
 +
-TIP: The Status column identifies how far along the agent is in the discovery process. The column displays a checkmark when discovery is complete.
+Note the following:
 
-. Repeat the steps for all other devices in the FlexPod converged infrastructure.
+* The user name and password should be for the account that you previously created for the device.
+* If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
 
 .Result
 
@@ -224,29 +218,19 @@ After you configure the agent, it sends information about each FlexPod device to
 
 . In the https://csa.netapp.com/[Converged Systems Advisor portal^], click *Add Infrastructure*.
 
-. Add basic details about the infrastructure: a name, your company name, and the location of the system.
+. Complete the steps to add the infrastructure:
 
-. In the Available Devices table, select each device that is part of the FlexPod configuration.
+.. Enter basic details about the infrastructure.
+.. Select each device that is part of the FlexPod configuration.
 +
 TIP: When you select a device, the Eligibility column displays either *Eligible* or *Not Eligible*. A device is not eligible if it was discovered by a different agent.
 +
-Once you have selected the required components, you should see a green checkmark next to each type of device.
+Once you have selected all of the required components, you should see a green checkmark next to each device type.
 +
 image:screenshot_add_infrastructure.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
 
-. Click *Add System* and then click *OK* in the confirmation dialog box.
-
-. When prompted, add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality:
-
-.. Enter the license key.
-
-.. Review and accept the terms of the End User License Agreement.
-
-.. Click *Submit*.
-+
-The Status column should now display that the license for the converged infrastructure is active.
-+
-image:screenshot_license_active.gif[Shows an active license in the Licensing table.]
+.. Add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality, or skip for now.
+.. Review the summary, accept the terms of the license agreement, and click *Add Infrastructure*.
 
 .Result
 

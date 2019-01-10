@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task_troubleshooting.html
 keywords: troubleshoot, agent, connectivity, browser, discover, error, internet, connection
-summary: You might need to troubleshoot issues as they occur.
+summary: If you encounter a problem while using Converged Systems Advisor, the following information might help you resolve the issue.
 ---
 
 = Troubleshooting Converged Systems Advisor
@@ -13,7 +13,7 @@ summary: You might need to troubleshoot issues as they occur.
 :imagesdir: ./media/
 
 [.lead]
-You might need to troubleshoot issues as they occur.
+If you encounter a problem while using Converged Systems Advisor, the following information might help you resolve the issue.
 
 == You cannot connect to the agent through a web browser
 

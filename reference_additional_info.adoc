@@ -21,7 +21,7 @@ For more details about the value that Converged Systems Advisor provides.
 
 * https://www.netapp.com/us/media/tr-4036.pdf[NetApp Technical Report 4036: FlexPod Datacenter Technical Specifications^]
 +
-Review the best practices and firmware requirements that Converged System Advisor compares your configurations against.
+Review the best practices and firmware requirements that Converged Systems Advisor compares your configurations against.
 
 * http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^]
 +

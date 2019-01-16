@@ -15,7 +15,7 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
-== 9 January 2019
+== 17 January 2019
 
 This release includes the following new features and enhancements:
 
@@ -24,6 +24,7 @@ This release includes the following new features and enhancements:
 * <<Simplified experience when adding an infrastructure>>
 * <<Device import using a file>>
 * <<Integration with NetApp Active IQ>>
+* <<Fixed issues>>
 
 === Support for new FlexPod devices
 
@@ -62,6 +63,27 @@ link:task_getting_started_customers.html#configuring-the-agent-to-discover-your-
 You can now launch Active IQ from Converged Systems Advisor. The following example shows an Active IQ link available in the Storage page:
 
 image:screenshot_active_iq.gif[A screenshot that shows the Active IQ link in the Storage page.]
+
+=== Fixed issues
+
+The following known issues have been fixed in this release:
+
+[cols=2*,options="header",cols="8,50"]
+|===
+
+| Bug ID
+| Description
+
+| 4671
+| Firefox might stop responding when browsing the Converged Systems Advisor portal.
+
+| 4500
+| The Converged Systems Advisor portal does not log you out after the timeout interval has expired. You remain logged in, but cannot see your FlexPod systems.
+
+| 2794
+| Converged Systems Advisor displays "Pass" for the rule titled "VMware tools check" even though VMware tools was not installed on the virtual machine.
+
+|===
 
 == 13 September 2018
 

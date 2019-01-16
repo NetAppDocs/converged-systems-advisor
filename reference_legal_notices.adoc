@@ -39,4 +39,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[^]
 
 Notice files provide information about third-party copyright and licenses used in NetApp software.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2849480[Notice for Converged System Advisor^]
+link:media/Converged_Systems_Advisor_3.1.pdf[Notice for Converged Systems Advisor^]

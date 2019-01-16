@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task_getting_started_customers.html
-keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract
+keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract, sshd
 summary: To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add the converged infrastructure to the portal.
 ---
 
@@ -31,10 +31,13 @@ Preparing your environment includes verifying support for your configuration, cr
 +
 To minimize bandwidth usage, NetApp recommends installing the agent in the same data center as the FlexPod converged infrastructure.
 
-. Ensure that the network in which you install the agent allows connectivity to the required endpoints:
+. Ensure that the network in which you install the agent allows connectivity between components:
 +
 * The agent must have connectivity to each FlexPod component so it can collect configuration data.
-* The agent also requires an outbound internet connection to communicate with the Converged Systems Advisor portal (csa.netapp.com).
+* The agent also requires an outbound internet connection to communicate with the following endpoints:
+** csa.netapp.com
+** docker.com
+** docker.io
 
 . <<Creating accounts on FlexPod devices,Create accounts on each FlexPod component>>.
 +
@@ -114,16 +117,29 @@ The agent is deployed as a VMware vSphere virtual machine from an Open Virtualiz
 .. Click *Download Agent*.
 
 . Install the agent by deploying the OVF template on the VMware ESXi server.
++
+On some versions of VMware, you might receive a warning when deploying the OVF template. The virtual machine was developed on the latest version of VCenter with hardware compatibility for older versions, which might result in the warning. You should review the configuration options prior to acknowledging the warning and then proceed with installation.
 
 === Setting up networking for the agent
 
-You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and csa.netapp.com.
+You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and several internet endpoints. Note that the networking stack is disabled on the virtual machine until the system initializes.
 
 .Steps
 
-. Log in to the agent's virtual machine console.
+. Ensure that an outbound internet connection enables access to the following endpoints:
+* csa.netapp.com
+* docker.com
+* docker.io
+
+. Log in to the agent's virtual machine console using the VMware vSphere client.
 +
-The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
+The default user name is `csa` and the default password is `netapp`.
++
+TIP: For security purposes, SSHD is disabled by default.
+
+. When prompted, change the default password and make note of the password, because it cannot be recovered.
++
+After you change the password, the system reboots and starts the agent software.
 
 . If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
 +
@@ -152,6 +168,10 @@ The following steps configure the virtual machine to use an HTTP proxy running o
 .. Edit `/etc/wgetrc` by adding the following:
 +
   http_proxy = http://192.168.10.10:3128
+
+. Once the network is up, wait approximately 5 minutes for the system to update and start.
++
+A broadcast message appears on the console when the agent is operational.
 
 . Verify connectivity by running the following CLI command from the agent:
 +

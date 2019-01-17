@@ -13,38 +13,37 @@ summary: Known issues identify problems that might prevent you from using the se
 :imagesdir: ./media/
 
 [.lead]
-Known issues identify problems that might prevent you from using the service successfully.
+Known issues identify problems that might prevent you from using the service successfully. If a Bugs Online report is available, the bug ID contains a hyperlink to the report.
 
-[cols=3*,options="header",cols="12,53,35"]
+[cols=2*,options="header",cols="12,53"]
 |===
 
 | Bug ID
 | Description
-| Workaround
 
-| 4912
-| “Image Not Found” might display when viewing the system diagram for a converged infrastructure.
-| There is no workaround.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1212001[1212001^]
+| Power Supply information for a rack mounted server might be displayed incorrectly
 
-| 4671
-| Firefox might stop responding when browsing the Converged Systems Advisor portal.
-| Wait for the script to complete.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211999[1211999^]
+| Space reservation status is displayed incorrectly
 
-| 4500
-| The Converged Systems Advisor portal does not log you out after the timeout interval has expired. You remain logged in, but cannot see your FlexPod systems.
-| Close your current browser session and then log in again from a new browser tab or window.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211998[1211998^]
+| Disk Space Utilization percentage is displayed incorrectly
 
-| 3931
-| When viewing details about a network switch, the Overview pane provides a visual representation of the status of each port. The color displayed for the port status can be misleading. For example, a red status typically indicates an error, but it can appear even when a port is not in use.
-| There is no workaround.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211995[1211995^]
+| Nexus switch port status might be displayed incorrectly
 
-| 3013
-| When viewing detailed information about a Nexus switch, the interfaces mapped to the VLAN do not match the actual device output.
-| There is no workaround.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211993[1211993^]
+| Thin provisioned status is displayed incorrectly
 
-| 2794
-| Converged Systems Advisor displays "Pass" for the rule titled "VMware tools check" even though VMware tools was not installed on the virtual machine.
-| Ignore the rule status and obtain the correct information from the vCenter Server.
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211990[1211990^]
+| Interfaces mapped to the VLAN in a Nexus switch might be mismatched with the actual device output
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211987[1211987^]
+| Storage Cluster Efficiency value is displayed incorrectly
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211321[1211321^]
+| System diagram images might not display for a converged infrastructure
 
 |===
 

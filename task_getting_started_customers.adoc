@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task_getting_started_customers.html
-keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract
+keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract, sshd
 summary: To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add the converged infrastructure to the portal.
 ---
 
@@ -31,10 +31,13 @@ Preparing your environment includes verifying support for your configuration, cr
 +
 To minimize bandwidth usage, NetApp recommends installing the agent in the same data center as the FlexPod converged infrastructure.
 
-. Ensure that the network in which you install the agent allows connectivity to the required endpoints:
+. Ensure that the network in which you install the agent allows connectivity between components:
 +
 * The agent must have connectivity to each FlexPod component so it can collect configuration data.
-* The agent also requires an outbound internet connection to communicate with the Converged Systems Advisor portal (csa.netapp.com).
+* The agent also requires an outbound internet connection to communicate with the following endpoints:
+** csa.netapp.com
+** docker.com
+** docker.io
 
 . <<Creating accounts on FlexPod devices,Create accounts on each FlexPod component>>.
 +
@@ -114,16 +117,29 @@ The agent is deployed as a VMware vSphere virtual machine from an Open Virtualiz
 .. Click *Download Agent*.
 
 . Install the agent by deploying the OVF template on the VMware ESXi server.
++
+On some versions of VMware, you might receive a warning when deploying the OVF template. The virtual machine was developed on the latest version of VCenter with hardware compatibility for older versions, which might result in the warning. You should review the configuration options prior to acknowledging the warning and then proceed with installation.
 
 === Setting up networking for the agent
 
-You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and csa.netapp.com.
+You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and several internet endpoints. Note that the networking stack is disabled on the virtual machine until the system initializes.
 
 .Steps
 
-. Log in to the agent's virtual machine console.
+. Ensure that an outbound internet connection enables access to the following endpoints:
+* csa.netapp.com
+* docker.com
+* docker.io
+
+. Log in to the agent's virtual machine console using the VMware vSphere client.
 +
-The default user name is `csa` and the default password is `netapp`. You should change the default password after you log in.
+The default user name is `csa` and the default password is `netapp`.
++
+TIP: For security purposes, SSHD is disabled by default.
+
+. When prompted, change the default password and make note of the password, because it cannot be recovered.
++
+After you change the password, the system reboots and starts the agent software.
 
 . If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
 +
@@ -152,6 +168,10 @@ The following steps configure the virtual machine to use an HTTP proxy running o
 .. Edit `/etc/wgetrc` by adding the following:
 +
   http_proxy = http://192.168.10.10:3128
+
+. Once the network is up, wait approximately 5 minutes for the system to update and start.
++
+A broadcast message appears on the console when the agent is operational.
 
 . Verify connectivity by running the following CLI command from the agent:
 +
@@ -192,23 +212,17 @@ You must configure the agent to collect configuration data from each device in y
 
 . Log in to the agent by entering the user name and password of your NetApp Support Site account.
 
-. Add the FlexPod devices that you want the agent to discover:
-
-.. Click *Add a device*.
-
-.. Select a device type.
-
-.. Enter the IP address or host name of the device.
-
-.. Enter the user name and password of the account that you previously created for this device.
+. Add the FlexPod devices that you want the agent to discover.
 +
-If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
+You have two options:
 
-.. Click *Add device*.
+.. Click *Add a device* to enter details about your FlexPod devices, one by one.
+.. Click *Import devices* to fill out and upload a CSV template that includes details about all devices.
 +
-TIP: The Status column identifies how far along the agent is in the discovery process. The column displays a checkmark when discovery is complete.
+Note the following:
 
-. Repeat the steps for all other devices in the FlexPod converged infrastructure.
+* The user name and password should be for the account that you previously created for the device.
+* If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
 
 .Result
 
@@ -224,29 +238,19 @@ After you configure the agent, it sends information about each FlexPod device to
 
 . In the https://csa.netapp.com/[Converged Systems Advisor portal^], click *Add Infrastructure*.
 
-. Add basic details about the infrastructure: a name, your company name, and the location of the system.
+. Complete the steps to add the infrastructure:
 
-. In the Available Devices table, select each device that is part of the FlexPod configuration.
+.. Enter basic details about the infrastructure.
+.. Select each device that is part of the FlexPod configuration.
 +
 TIP: When you select a device, the Eligibility column displays either *Eligible* or *Not Eligible*. A device is not eligible if it was discovered by a different agent.
 +
-Once you have selected the required components, you should see a green checkmark next to each type of device.
+Once you have selected all of the required components, you should see a green checkmark next to each device type.
 +
 image:screenshot_add_infrastructure.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
 
-. Click *Add System* and then click *OK* in the confirmation dialog box.
-
-. When prompted, add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality:
-
-.. Enter the license key.
-
-.. Review and accept the terms of the End User License Agreement.
-
-.. Click *Submit*.
-+
-The Status column should now display that the license for the converged infrastructure is active.
-+
-image:screenshot_license_active.gif[Shows an active license in the Licensing table.]
+.. Add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality, or skip for now.
+.. Review the summary, accept the terms of the license agreement, and click *Add Infrastructure*.
 
 .Result
 

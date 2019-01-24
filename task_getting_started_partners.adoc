@@ -17,7 +17,7 @@ If you are a NetApp partner, follow the steps below to get Converged Systems Adv
 
 == Getting Converged Systems Advisor up and running in your customer's environment
 
-Please note:  Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
+*Please note:*  Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
 
 . Prepare the environment.
 . Install and configure the Converged Systems Advisor agent.

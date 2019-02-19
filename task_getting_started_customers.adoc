@@ -282,6 +282,69 @@ TIP: You can enter multiple email addresses in a single field by pressing *Enter
 
 The user should receive an email that contains instructions for accessing Converged Systems Advisor.
 
+== Granting CSA user privileges using a TACACS+ server
+
+If you are using a TACACS+ server and you need to grant CSA user privileges for your switches, you must create a user privilege group and grant the group access to the specific set up commands needed by CSA.
+
+The following commands should be written into the configuration file for your TACACS+ server.
+
+.Steps
+
+. Enter the following to create a user privilege group with read-only access:
+  group=group_name {
+    default service=deny
+    service=exec{
+      priv-lvl=0
+    }
+  }
+. Enter the following to grant access to commands needed by CSA:
+  cmd=show {
+    permit "environment"
+    permit "version"
+    permit "feature"
+    permit "feature-set"
+    permit hardware.*
+    permit "interface"
+    permit "interface"
+    permit "interface transceiver"
+    permit "inventory"
+    permit "license"
+    permit "module"
+    permit "port-channel database"
+    permit "ntp peers"
+    permit "license usage"
+    permit "port-channel summary"
+    permit "running-config"
+    permit "startup-config"
+    permit "running-config diff"
+    permit "switchname"
+    permit "int mgmt0"
+    permit "cdp neighbors detail"
+    permit "vlan"
+    permit "vpc"
+    permit "vpc peer-keepalive"
+    permit "mac address-table"
+    permit "lacp port-channel"
+    permit "policy-map"
+    permit "policy-map system type qos"
+    permit "policy-map system type queuing"
+    permit "policy-map system type network-qos"
+    permit "zoneset active"
+    permit "san-port-channel summary"
+    permit "flogi database"
+    permit "fcns database detail"
+    permit "fcns database detail"
+    permit "zoneset active"
+    permit "vsan"
+    permit "vsan usage"
+    permit "vsan membership"
+    }
+. Enter the following to add your CSA user account to the newly created group:
+  user=user_account{
+    member=group_name
+    login=file/etc/passwd
+  }
+
 == Configuring notifications
 
 If you have a Premium license, Converged Systems Advisor can alert you about changes to your FlexPod infrastructure through email notifications.

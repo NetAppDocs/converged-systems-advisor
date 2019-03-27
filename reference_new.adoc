@@ -15,6 +15,31 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
+== 28 March 2019
+
+The following known issues have been fixed in this release:
+
+[cols=2*,options="header",cols="8,50"]
+|===
+
+| Bug ID
+| Description
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211993[1211993]
+| Thin Provisioned status is displayed incorrectly in CSA
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211998[1211998]
+| Disk Space Utilization percentage is displayed incorrectly in CSA
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211990[1211990]
+| Interfaces mapped to the VLAN in Nexus switch might be mismatched with the actual device output in CSA
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1212001[1212001]
+| Power Supply information for a rack mounted server might be displayed incorrectly in CSA
+
+|===
+
+
 == 17 January 2019
 
 This release includes the following new features and enhancements:

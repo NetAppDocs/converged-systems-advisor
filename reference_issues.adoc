@@ -21,23 +21,11 @@ Known issues identify problems that might prevent you from using the service suc
 | Bug ID
 | Description
 
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1212001[1212001^]
-| Power Supply information for a rack mounted server might be displayed incorrectly
-
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211999[1211999^]
 | Space reservation status is displayed incorrectly
 
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211998[1211998^]
-| Disk Space Utilization percentage is displayed incorrectly
-
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211995[1211995^]
 | Nexus switch port status might be displayed incorrectly
-
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211993[1211993^]
-| Thin provisioned status is displayed incorrectly
-
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211990[1211990^]
-| Interfaces mapped to the VLAN in a Nexus switch might be mismatched with the actual device output
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211987[1211987^]
 | Storage Cluster Efficiency value is displayed incorrectly

@@ -25,7 +25,10 @@ The default user name is *csa* and the default password is *netapp*.  Change the
 
 . Enter `# systemctl stop csa.service` to stop the CSA service.
 
-. Enter `# ls/etc/network/interfaces.d/ eth0` to determine your correct interface file name.
+. Enter the following to determine your correct interface file name.
++
+`# ls/etc/network/interfaces.d/`
+`eth0` 
 
 . Enter `# ifdown eth0` to stop the active interface.
 

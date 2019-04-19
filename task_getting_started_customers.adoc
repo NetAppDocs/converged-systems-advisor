@@ -249,7 +249,7 @@ Once you have selected all of the required components, you should see a green ch
 +
 image:screenshot_add_infrastructure.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
 
-.. Add your link:concept_licensing.html[Converged Systems Advisor license] to unlock key functionality, or skip for now.
+.. Add your link:concept_licensing.html[Converged Systems Advisor serial number] to unlock key functionality.
 .. Review the summary, accept the terms of the license agreement, and click *Add Infrastructure*.
 
 .Result

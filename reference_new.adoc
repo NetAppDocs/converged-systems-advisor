@@ -15,6 +15,26 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
+== 25 April 2019
+
+This release includes the following new features and enhancements:
+
+* <<Automatically resolving failed rules>>
+* <<Displaying suppressed rules>>
+* <<Fixed issues>>
+
+=== Automatically resolving failed rules
+
+Converged Systems Advisor can now automatically resolve issues that certain rules to fail.  This functionality is automatically enabled by restarting your agent.
+
+=== Displaying suppressed rules
+
+You can now display a list of suppressed rules within Converged Systems Advisor and elect to reenable alerts for rules that have been suppressed.
+
+=== Fixed issues
+
+The following known issues have been fixed in this release:
+
 == 28 March 2019
 
 The following known issues have been fixed in this release:

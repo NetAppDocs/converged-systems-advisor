@@ -25,11 +25,11 @@ This release includes the following new features and enhancements:
 
 === Automatically resolving failed rules
 
-Converged Systems Advisor can now automatically resolve issues that certain rules to fail.  This functionality is automatically enabled by restarting your agent.
+Converged Systems Advisor can now automatically resolve issues that cause certain rules to fail.  This functionality is automatically enabled by restarting your agent.
 
 === Displaying suppressed rules
 
-You can now display a list of suppressed rules within Converged Systems Advisor and elect to reenable alerts for rules that have been suppressed.
+You can now display a global list of suppressed rules within Converged Systems Advisor and reenable alerts for suppressed rules from the list.
 
 === Fixed issues
 

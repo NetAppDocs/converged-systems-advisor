@@ -45,6 +45,11 @@ The status for the rules that you addressed should display as Pass after the age
 
 If your infrastructure fails to pass certain rules, you can select to have Converged Systems Advisor automatically fix the issues causing the failures.
 
+.About this task
+
+* You must have the Premium license.
+* You must be assigned as an owner for your user role.
+
 .Steps
 
 . Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] and click *Rules*.
@@ -70,7 +75,9 @@ image:operations_icon.gif[Shows the operations icon that opens the menu to see r
 
 == Suppressing failed rules
 
-If you receive alert notifications that you do not plan to address, you can configure Converged Systems Advisor to stop displaying alerts about that specific rule in the Rules table and to stop sending email notifications for that rule. For example, enabling telnet is not recommended, but if you prefer to enable it, you can suppress the rule.
+If you receive alert notifications that you do not plan to address, you can configure Converged Systems Advisor to stop displaying alerts about that specific rule in the Rules table and to stop sending email notifications for that rule.
+
+For example, enabling telnet is not recommended, but if you prefer to enable it, you can suppress the rule.
 
 .About this task
 
@@ -78,7 +85,7 @@ You must have the Premium license to configure notifications.
 
 .Steps
 
-. Click *Rules*.
+. From the Dashboard, click *Rules*.
 
 . Find the rules that you are looking for by filtering the contents of the table.
 
@@ -114,7 +121,7 @@ image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which 
 
 .Result
 
-Alerts are enabled for the rule and it is displayed in the Rules table.
+Alerts are enabled for the selected rule and the rule is displayed in the Rules table.
 
 == Reviewing the history for an infrastructure
 

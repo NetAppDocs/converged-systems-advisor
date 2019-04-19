@@ -19,34 +19,39 @@ If your environment does not have a DHCP server, you can set a static IP address
 
 . Log in to the agent's virtual machine console using the VMware vSphere client.
 +
-The default user name is *csa* and the default password is *netapp*.
+The default user name is *csa* and the default password is *netapp*.  Change the password, if prompted.
 
 . Enter `sudo su –` at the csa prompt to become root.
 
-. Enter `nmtui` at the root shell prompt.
+. Enter `# systemctl stop csa.service` to stop the CSA service.
+
+. Enter `# ls/etc/network/interfaces.d/ eth0` to determine your correct interface file name.
+
+. Enter `# ifdown eth0` to stop the active interface.
+
+. Edit the /etc/network/interfaces.d/eth0 file with the editor of your choice.
 +
-You should now see the NetworkManager TUI.
+`# nano/etc/network/interfaces.d/eth0` or `# vi/etc/network/interfaces.d/eth0`
 +
-image:screenshot_nmutil.gif[1]
-
-. Press *Tab* until you reach the *OK* prompt and press *Enter*.
-
-. Keep *Wired connection 1* selected, press *Tab* to reach the *Edit* prompt, and then press *Enter*.
+The file contains the following:
 +
-image:screenshot_nmutil_edit.gif[1]
+`allow-hotplug eth0`
+`iface eth0 inet dhcp`
 
-. Press *Tab* until you reach the *Show* menu for IPv4 connections, and then press *Enter*.
+. Remove `iface eth0 inet dhcp` and add the following.
+NOTE: You must substitute the correct values for all  the entries that follow the field names in the example below.  For instance, `192.168.11.1` is the value for the gateway in the example.  However, instead of `192.168.11.1`, you should enter the correct address for your gateway.
 +
-image:screenshot_nmutil_ipv4_show.gif[1]
+`iface eth0 inet static`
+`address 192.168.11.100`
+`netmask 255.255.255.0`
+`gateway 192.168.11.1`
+`dns-domain example.com`
+`dns-nameservers 192.168.11.1`
 
-. Highlight *Add* and enter the required information for each parameter.
+. Save the file.
 +
-Be sure to enter the address in the form of address/mask, as shown below.
-+
-image:screenshot_nmutil_ipv4.gif[1]
+In nano, you enter *ctrl + o* followed by *ctrl + x* to save.
 
-. Press *Tab* until you reach the *OK* prompt and press *Enter*.
+. Enter `# ifup eth0` to start the network interface.
 
-. Go back to the main menu, highlight *Quit*, and then press *Enter*.
-
-. Reboot the agent.
+. Enter `systemctl start csa.service` to restart Converged Systems Advisor.

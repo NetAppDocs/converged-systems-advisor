@@ -19,7 +19,7 @@ If your environment does not have a DHCP server, you can set a static IP address
 
 . Log in to the agent's virtual machine console using the VMware vSphere client.
 +
-The default user name is *csa* and the default password is *netapp*.  Change the password, if prompted.
+The default user name is *csa* and the default password is *netapp*. Change the password, if prompted.
 
 . Enter `sudo su –` at the csa prompt to become root.
 

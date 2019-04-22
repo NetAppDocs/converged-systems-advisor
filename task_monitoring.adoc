@@ -48,7 +48,7 @@ Converged Systems Advisor can resolve some failed rules for you by correcting th
 .About this task
 
 * You must have the Premium license.
-* You must be assigned as an owner of the converged infrastructure or FlexPod.
+* You must be assigned as an owner of the converged infrastructure.
 
 .Steps
 

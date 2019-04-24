@@ -151,23 +151,15 @@ For additional help with networking, see https://wiki.debian.org/NetworkConfigur
 
 . If your security policies dictate that the agent must be on one network to communicate with FlexPod devices and another network to communicate with the internet, add a second network interface in VCenter and configure the correct VLANs and IP addresses.
 
-. If a proxy server is required for internet access, configure the virtual machine to use the proxy by setting the http_proxy environment variable.
+. If a proxy server is required for internet access, run the following command:
 +
-*Example*
+`sudo csa_set_proxy`
 +
-The following steps configure the virtual machine to use an HTTP proxy running on 192.168.10.10 and port 3128.
+The command generates two prompts and shows the required format for the proxy entry. The first prompt enables you to specify an HTTP proxy, while the second enables you to specify an HTTPS proxy.
 +
-.. Add `/etc/profile.d/proxy.sh` with the following contents:
+Here's the prompt for the HTTP proxy:
 +
-  export http_proxy=http://192.168.10.10:3128
-
-.. Add `/etc/apt/apt.conf.d/99HttpProxy` with the following contents:
-+
-  Acquire::http::Proxy "http://192.168.10.10:3128";
-
-.. Edit `/etc/wgetrc` by adding the following:
-+
-  http_proxy = http://192.168.10.10:3128
+image:screenshot_http_proxy.gif[A screenshot that shows the HTTP proxy prompt.]
 
 . Once the network is up, wait approximately 5 minutes for the system to update and start.
 +

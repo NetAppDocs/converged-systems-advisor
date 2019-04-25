@@ -41,6 +41,94 @@ If needed, <<Reviewing the history for an infrastructure,review the configuratio
 
 The status for the rules that you addressed should display as Pass after the agent's next collection period.
 
+== Remediating failed rules
+
+Converged Systems Advisor can resolve some failed rules for you by correcting the underlying issue with the converged infrastructure.
+
+.About this task
+
+* You must have the Premium license.
+* You must be assigned as an owner of the converged infrastructure.
+
+.Steps
+
+. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] and click *Rules*.
++
+The Rules page displays a summary of all rules. The status for each rule is either *Pass*, *Warning*, or *Fail*.
+
+. Select *Filter rules that can be remediated*.
+
+. Expand the rule that you want to resolve.
+
+. Click image:wrench_icon.jpg[Shows the wrench icon which enables you to automatically fix failed rules.] in the top right corner of the expanded rule.
++
+If the icon is disabled, it's either because the agent is offline, you don't have Owner privileges, or because you don't have a Premium license.
+
+. If necessary, fill in the input values.
++
+Depending on the failed rule, some input values are necessary to resolve the issue.
+
+. If you want a data collection to be taken after the successful completion of the remediation, then select the option *Collect When Remediation Job Completes*.
+
+. Click *Run remediation*.
+
+. Click *Confirm*.
+
+. To view actions being taken to resolve failed rules, click the *Operations* icon and selection *Remediation Action*.
++
+image:operations_icon.gif[Shows the operations icon that opens the menu to see remediated actions.]
+
+
+== Suppressing failed rules
+
+Converged Systems Advisor allows you to suppress rules so that do not show up in dashboard and no longer send email notifications on rule failure.
+
+For example, enabling telnet is not recommended, but if you prefer to enable it, you can suppress the rule.
+
+.About this task
+
+You must have the Premium license to configure notifications.
+
+.Steps
+
+. From the Dashboard, click *Rules*.
+
+. Find the rules that you are looking for by filtering the contents of the table.
+
+. Select one or more rows for rules that have a status of Warning or Fail and then click the *Alerts* icon.
++
+image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which enables you to suppress rules.]
+
+. Select a duration and then click *Submit*.
+
+TIP: If you want to enable the alerts, follow these same steps and select *End Suppression*.
+
+.Result
+
+Converged Systems Advisor no longer notifies you about the rule for the specified duration and the rule will no longer be visible in the dashboard.
+
+== Displaying suppressed rules
+
+You can view the list of rules that have been suppressed and, if desired, select to end the suppression.
+
+.Steps
+
+. Click the *Settings* icon and select *Suppressed Rules*.
++
+image:screenshot_suppressed_rules.gif[Shows settins icon which opens menu to select suppressed rules.]
+
+. Select the suppressed rules that you want to begin displaying.
+
+. Click the *Alerts* icon.
++
+image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which enables you to suppress rules.]
+
+. Select *End Suppression* and then click *Submit*.
+
+.Result
+
+Alerts are enabled for the selected rule and the rule is displayed in the Rules table and dashboard.
+
 == Reviewing the history for an infrastructure
 
 When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
@@ -66,32 +154,6 @@ image:screenshot_history_status.gif[Shows the number one and one yellow dot on t
 . If needed, view the history for the last time that no warnings or failures were identified.
 +
 Comparing the data between the two collection periods can help you identify what changed.
-
-== Changing the notifications that you receive
-
-If you receive alert notifications that you do not plan to address, you can configure Converged Systems Advisor to stop sending email notifications for that rule. For example, enabling telnet is not recommended, but if you prefer to enable it, you can suppress the rule.
-
-.About this task
-
-You must have the Premium license to configure notifications.
-
-.Steps
-
-. Click *Rules*.
-
-. Find the rules that you are looking for by filtering the contents of the table.
-
-. Select one or more rows for rules that have a status of Warning or Fail and then click the *Alerts* icon.
-+
-image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which enables you to suppress rules.]
-
-. Select a duration and then click *Submit*.
-+
-TIP: If you want to enable the alerts, follow these same steps and select *End Suppression*.
-
-.Result
-
-Converged Systems Advisor no longer notifies you about the rule for the specified duration.
 
 == Generating reports
 

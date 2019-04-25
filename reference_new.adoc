@@ -15,6 +15,46 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
+== 25 April 2019
+
+This release includes the following new features and enhancements:
+
+* <<Automatically resolving failed rules>>
+* <<Displaying suppressed rules>>
+* <<Fixed issues>>
+
+=== Automatically resolving failed rules
+
+Converged Systems Advisor can now automatically resolve issues that cause certain rules to fail. This functionality is automatically enabled by restarting your agent.
+
+=== Displaying suppressed rules
+
+You can now display a global list of suppressed rules within Converged Systems Advisor and reenable alerts for suppressed rules from the list.
+
+=== Fixed issues
+
+The following known issues have been fixed in this release:
+
+[cols=2*,options="header",cols="12,53"]
+|===
+
+| Bug ID
+| Description
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211321[1211321^]
+| System diagram images might not display for a converged infrastructure
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211987[1211987^]
+| Storage Cluster Efficiency value is displayed incorrectly
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211995[1211995^]
+| Nexus switch port status might be displayed incorrectly
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211999[1211999^]
+| Space reservation status is displayed incorrectly
+
+|===
+
 == 28 March 2019
 
 The following known issues have been fixed in this release:

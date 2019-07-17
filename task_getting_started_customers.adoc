@@ -233,13 +233,16 @@ After you configure the agent, it sends information about each FlexPod device to
 . Complete the steps to add the infrastructure:
 
 .. Enter basic details about the infrastructure.
++
+If you are adding a Cisco ACI Infrastructure, enter *yes* when asked if your FlexPod uses Cisco UCS Manager; and enter *Nexus switch in ACI mode* when asked the type of Network Configuration your FlexPod contains.
+
 .. Select each device that is part of the FlexPod configuration.
 +
 TIP: When you select a device, the Eligibility column displays either *Eligible* or *Not Eligible*. A device is not eligible if it was discovered by a different agent.
 +
 Once you have selected all of the required components, you should see a green checkmark next to each device type.
 +
-image:screenshot_add_infrastructure.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
+image:screenshot_add_infrastructure_pikesupdate.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
 
 .. Add your link:concept_licensing.html[Converged Systems Advisor serial number] to unlock key functionality.
 .. Review the summary, accept the terms of the license agreement, and click *Add Infrastructure*.

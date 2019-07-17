@@ -15,6 +15,21 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
+== 25 July 2019
+
+This release includes the following new features and enhancements:
+
+* <<Support for Cisco ACI in FlexPod>>
+* <<Support for multiple clusters in a single FlexPod>>
+
+=== Support for Cisco ACI in FlexPod
+
+Converged Systems Advisor now supports FlexPod designs with Cisco ACI Networking.  The support and configuration of all devices in your FlexPod will be evaluated, even the two dynamically determined leaf switches connected to your other FlexPod devices.
+
+=== Support for multiple clusters in a single FlexPod
+
+Converged Systems Advisor now supports multiple clusters in a single FlexPod. Storage ONTAP rules are processed on all clusters and all clusters are reflected on the system diagram.
+
 == 25 April 2019
 
 This release includes the following new features and enhancements:

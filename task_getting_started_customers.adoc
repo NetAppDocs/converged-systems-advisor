@@ -87,6 +87,21 @@ image:screenshot_system_manager_settings.gif[The settings icon in System Manager
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 
+== Creating a read-only account on the APIC
+
+You can set up a read-only access account for other users on your APIC.
+
+. Click *Admin*.
+. Click *Create new local users*.
+. Under *User Identity*, enter the user information
+. Under *Security* select all security domain options.
+. Click *+* to add user certificates and SSH keys if needed.
+. Click *Next*.
+. Click *+* to add roles for your domain.
+. Select the *Role Name from the dropdown menu.
+. Select *Read* for the *Role Privilege Type*.
+. Click *Finish*.
+
 == Deploying the agent
 
 You must deploy the Converged Systems Advisor agent on a VMware ESXi server. The agent collects configuration data about each device in your FlexPod converged infrastructure and sends that data to the Converged Systems Advisor portal.

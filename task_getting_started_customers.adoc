@@ -87,7 +87,7 @@ image:screenshot_system_manager_settings.gif[The settings icon in System Manager
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 
-== Creating a read-only account on the APIC
+=== Creating a read-only account on the APIC
 
 You can set up a read-only access account for other users on your APIC.
 

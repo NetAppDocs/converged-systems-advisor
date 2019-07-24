@@ -93,7 +93,7 @@ You can set up a read-only access account for other users on your APIC.
 
 . Click *Admin*.
 . Click *Create new local users*.
-. Under *User Identity*, enter the user information
+. Under *User Identity*, enter the user information.
 . Under *Security* select all security domain options.
 . Click *+* to add user certificates and SSH keys if needed.
 . Click *Next*.

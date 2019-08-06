@@ -83,7 +83,7 @@ image:screenshot_system_manager_settings.gif[The settings icon in System Manager
 
 .. On the Users page, click *Add*.
 
-.. Enter a user name and password and add *ssh* and *ontapi* as user login methods with admin access.
+.. Enter a user name and password and add *ssh*, *ontapi* and *console* as user login methods with admin access.
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 

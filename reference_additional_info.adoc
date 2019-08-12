@@ -34,3 +34,7 @@ Connect with peers, ask questions, exchange ideas, find resources, and share bes
 * http://docs.netapp.com[NetApp Product Documentation^]
 +
 Search NetApp product documentation for instructions, resources, and answers.
+
+* https://mysupport.netapp.com/portal[Open a Support Case]
++
+Open a support case for additional assistance.  Support cases should be opened under *Cat1 -> Remote Diagnostic Tools* and *Cat2 -> Converged System Advisor*.

@@ -30,7 +30,7 @@ The default user name is *csa* and the default password is *netapp*. Change the 
 `# ls /etc/network/interfaces.d/`
 `eth0`
 
-. Enter `# ifdown eth0` to stop the active interface.
+. Enter `# /sbin/ifdown eth0` to stop the active interface.
 
 . Edit the /etc/network/interfaces.d/eth0 file with the editor of your choice.
 +

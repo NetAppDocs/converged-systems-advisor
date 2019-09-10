@@ -27,18 +27,17 @@ The default user name is *csa* and the default password is *netapp*. Change the 
 
 . Enter the following to determine your correct interface file name.
 +
+In this example, the interface file name is `eth0`.
++
 `# ls /etc/network/interfaces.d/`
-`eth0`
 
 . Enter `# /sbin/ifdown eth0` to stop the active interface.
 
 . Edit the /etc/network/interfaces.d/eth0 file with the editor of your choice.
 +
-`# nano /etc/network/interfaces.d/`
-`eth0`
+`# nano /etc/network/interfaces.d/eth0`
 or
-`# vi /etc/network/interfaces.d/`
-`eth0`
+`# vi /etc/network/interfaces.d/eth0`
 +
 The file contains the following:
 +
@@ -58,6 +57,10 @@ NOTE: You must substitute the correct values for all  the entries that follow th
 . Save the file.
 +
 In nano, you enter *ctrl + o* followed by *ctrl + x* to save.
+
+. Enter `vi/etc/resolv.conf` to open the configuration file.
+
+. Add `nameserver <ip_address>` to the top of the file. 
 
 . Enter `# ifup eth0` to start the network interface.
 

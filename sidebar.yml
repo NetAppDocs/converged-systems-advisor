@@ -21,10 +21,10 @@ entries:
         url: /reference_user_roles.html
   - title: Getting started
     entries:
-      - title: Getting started for customers
-        url: /task_getting_started_customers.html
-      - title: Getting started for partners
-        url: /task_getting_started_partners.html
+      - title: Getting started
+        url: /task_getting_started.html
+      - title: Deployment validation report for partners
+        url: /task_deployment_validation.html
       - title: Setting a static IP on the agent
         url: /task_setting_static_ip.html
   - title: Monitoring your infrastructure

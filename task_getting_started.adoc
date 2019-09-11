@@ -79,7 +79,7 @@ TIP: All new users are read-only by default.
 +
  copy running configuration startup configuration
 
-If you are using a TACACS+ server and you need to grant CSA user privileges, click link: <<task_getting_started.adoc#granting_csa_user_privileges_using_a_tacacs_server, here>>
+If you are using a TACACS+ server and you need to grant CSA user privileges, click link:<<task_getting_started.adoc#granting-csa-user-privileges-using-a-tacacs-server, here>>
 
 ==== Create an admin account for ONTAP
 

@@ -100,7 +100,7 @@ image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System
 
 .Steps
 
-. Log into Vcenter.
+. Log in to Vcenter.
 . In the VCenter menu, choose *administration*.
 . Under roles, choose *Read-only*.
 . Next to the green *+*, click the icon for *clone role action*.
@@ -110,7 +110,7 @@ image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System
 . Name the new user *CSAREADONLY* under DOMAIN vpshere.local.
 . Under *Global Permission*, choose *CSAREADONLY*.
 . Assign *ROLE CSAREADONLY*.
-. Log into the Web Client
+. Log in to the Web Client
 +
 Use user ID: *CSAREADONLY@vsphere.local* and password.
 

@@ -128,7 +128,7 @@ It's now easier to add an infrastructure to Converged Systems Advisor. The porta
 
 image:screenshot_add_infrastructure_overview.gif[A screenshot that shows the Add Infrastructure page. Four steps are available in the process: adding basic details, selecting the devices, adding a license, and reviewing a summary.]
 
-link:task_getting_started_customers.html#adding-an-infrastructure-to-the-portal[Learn how to add an infrastructure to Converged Systems Advisor].
+link:task_getting_started.html#adding-an-infrastructure-to-the-portal[Learn how to add an infrastructure to Converged Systems Advisor].
 
 === Device import using a file
 
@@ -136,7 +136,7 @@ You can now configure the Converged Systems Advisor agent to discover your FlexP
 
 image:screenshot_import_devices.gif[]
 
-link:task_getting_started_customers.html#configuring-the-agent-to-discover-your-flexpod-infrastructure[Learn how to configure the agent to discover your FlexPod infrastructure].
+link:task_getting_started.html#configuring-the-agent-to-discover-your-flexpod-infrastructure[Learn how to configure the agent to discover your FlexPod infrastructure].
 
 === Integration with NetApp Active IQ
 

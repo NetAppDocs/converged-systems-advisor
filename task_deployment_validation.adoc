@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: task_getting_started_partners.html
+permalink: task_deployment_validation.html
 keywords: partner, validate, deployment validation
 summary: If you are a NetApp partner, you can get started with Converged Systems Advisor by working with your customer to deploy the agent and set up the portal before you run a deployment validation.
 ---
 
-= Getting started with Converged Systems Advisor for partners
+= Deployment validation report for partners
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,22 +13,19 @@ summary: If you are a NetApp partner, you can get started with Converged Systems
 :imagesdir: ./media/
 
 [.lead]
-If you are a NetApp partner, follow the steps below to get Converged Systems Advisor running in your customer's data center.
+//If you are a NetApp partner, follow the steps below to get Converged Systems Advisor running in your customer's data center.
 
-== Getting Converged Systems Advisor up and running in your customer's environment
+//== Getting Converged Systems Advisor up and running in your customer's environment
 
-*Please note:*  Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
+//*Please note:*  Your customer must deploy the Converged Systems Advisor agent and set up the portal before you can validate the converged infrastructure deployment.
 
-. Prepare the environment.
-. Install and configure the Converged Systems Advisor agent.
-. Add the converged infrastructure to the Converged Systems Advisor portal.
+//. Prepare the environment.
+//. Install and configure the Converged Systems Advisor agent.
+//. Add the converged infrastructure to the Converged Systems Advisor portal.
 
-For instructions, see link:task_getting_started_customers.html[Getting started with Converged Systems Advisor for customers].
+//For instructions, see link:task_getting_started_customers.html[Getting started with Converged Systems Advisor for customers].
 
-To view your customer's systems in the partner portal, have the customer share the infrastructure with you.
-
-== Validating a converged infrastructure deployment
-
+//To view your customer's systems in the partner portal, have the customer share the infrastructure with you.
 NetApp partners can run a deployment validation to verify that a FlexPod converged infrastructure is configured correctly. Partners can then hand off the report to customers.
 
 .Steps

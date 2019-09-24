@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task_getting_started_customers.html
+permalink: task_getting_started.html
 keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract, sshd
 summary: To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add the converged infrastructure to the portal.
 ---
@@ -49,21 +49,25 @@ A NetApp Support Site account is required to configure the agent and to access t
 
 === Creating accounts on FlexPod devices
 
-You must set up a read-only account in Cisco UCS Manager and on your Cisco Nexus switches. An admin account is required for ONTAP systems. The agent uses these accounts to collect configuration data from each device.
+You must set up a read-only account in Cisco UCS Manager and on your Cisco Nexus switches. An admin account is required for ONTAP systems and VMware. You can set up a read-only access account for other users on your APIC. The agent uses these accounts to collect configuration data from each device.
+
+==== Create a read-only account for Cisco UCS Manager
 
 .Steps
 
-. Create a read-only account for Cisco UCS Manager:
-.. Log in to Cisco UCS Manager.
-.. Create a locally authenticated user named _csa-readonly_.
+. Log in to Cisco UCS Manager.
+
+. Create a locally authenticated user named _csa-readonly_.
 +
 TIP: All new users are read-only by default.
 
-. Create a read-only account for your Nexus switches:
+==== Create a read-only account for your Nexus switches
 
-.. Log in to each Nexus switch using SSH or telnet.
+.Steps
 
-.. Enter global configuration mode:
+. Log in to each Nexus switch using SSH or telnet.
+
+. Enter global configuration mode:
 +
  configure terminal
 
@@ -75,21 +79,47 @@ TIP: All new users are read-only by default.
 +
  copy running configuration startup configuration
 
-. Create an admin account for ONTAP:
+//If you are using a TACACS+ server and you need to grant CSA user privileges, click link:<<task_getting_started.html#granting-csa-user-privileges-using-a-tacacs-server, here>>
+If you are using a TACACS+ server and you need to grant CSA user privileges, go to <<Granting CSA user privileges using a TACACS+ server>>.
 
-.. Log in to OnCommand System Manager and click the settings icon:
+==== Create an admin account for ONTAP
+
+.Steps
+
+. Log in to OnCommand System Manager and click the settings icon:
 +
 image:screenshot_system_manager_settings.gif[The settings icon in System Manager.].
 
-.. On the Users page, click *Add*.
+. On the Users page, click *Add*.
 
-.. Enter a user name and password and add *ssh*, *ontapi* and *console* as user login methods with admin access.
+. Enter a user name and password and add *ssh*, *ontapi* and *console* as user login methods with admin access.
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 
-=== Creating a read-only account on the APIC
+==== Create a read-only account for VMware
 
-You can set up a read-only access account for other users on your APIC.
+.Steps
+
+. Log in to vCenter.
+. In the vCenter menu, choose *Administration*.
+. Under roles, choose *Read-only*.
+. Click the icon for *Clone role action* and change the name to *CSA*.
+//. Name the cloned role *CSAREADONLY*.
+. Select the newly created *CSA* role.
+. Click the *Edit role* icon.
+. Under *Edit role*, choose *Global* and then check *Licenses*.
+. On the sidebar, select *Single sign on->Users and groups->Create a new user*.
+. Name the new user *CSARO* under DOMAIN vpshere.local.
+. On the sidebar, select *Global Permissions* under *Access Control*.
+. Choose the user *CSARO* and assign ROLE *CSA*.
+. Log in to the Web Client.
++
+Use user ID: *CSARO@vsphere.local* and previously created password.
+
+
+==== Create a read-only account on the APIC
+
+.Steps
 
 . Click *Admin*.
 . Click *Create new local users*.

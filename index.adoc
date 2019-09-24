@@ -21,8 +21,7 @@ link:reference_new.html[What's new in Converged Systems Advisor]
 
 == Get started
 
-* link:task_getting_started_customers.html[Getting started for customers]
-* link:task_getting_started_partners.html[Getting started for partners]
+link:task_getting_started.html[Getting started]
 
 == Learn about Converged Systems Advisor
 

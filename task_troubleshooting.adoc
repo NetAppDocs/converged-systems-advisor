@@ -19,7 +19,7 @@ If you encounter a problem while using Converged Systems Advisor, the following 
 
 You need to connect to the agent through a web browser to configure discovery of your FlexPod devices. If you cannot connect through a web browser, ensure that the agent has an outbound internet connection to csa.netapp.com. The agent application cannot start without an internet connection, which prevents you from accessing its web interface.
 
-If a proxy server is required for internet access, link:task_getting_started_customers.html#setting-up-networking-for-the-agent[configure the agent virtual machine to use it].
+If a proxy server is required for internet access, link:task_getting_started.html#setting-up-networking-for-the-agent[configure the agent virtual machine to use it].
 
 == The agent cannot discover devices
 

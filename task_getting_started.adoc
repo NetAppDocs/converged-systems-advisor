@@ -101,9 +101,6 @@ image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System
 .Steps
 
 . Log in to Vcenter.
-+
-image:screenshot_vcenter_home.gif[vCenter Home]
-
 . In the VCenter menu, choose *administration*.
 . Under roles, choose *Read-only*.
 . Next to the green *+*, click the icon for *clone role action*.

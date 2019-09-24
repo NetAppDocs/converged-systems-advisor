@@ -100,19 +100,21 @@ image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System
 
 .Steps
 
-. Log in to Vcenter.
-. In the VCenter menu, choose *administration*.
+. Log in to vCenter.
+. In the vCenter menu, choose *Administration*.
 . Under roles, choose *Read-only*.
-. Next to the green *+*, click the icon for *clone role action*.
-. Name the cloned role *CSAREADONLY*.
-. In privileges, choose *GLOBAL* and then check *LICENSES*.
-. Select *Single sign on->Users and groups->Create a new user*.
-. Name the new user *CSAREADONLY* under DOMAIN vpshere.local.
-. Under *Global Permission*, choose *CSAREADONLY*.
-. Assign *ROLE CSAREADONLY*.
-. Log in to the Web Client
+. Click the icon for *Clone role action* and change the name to *CSA*.
+//. Name the cloned role *CSAREADONLY*.
+. Select the newly created *CSA* role.
+. Click the *Edit role* icon.
+. Under *Edit role*, choose *Global* and then check *Licenses*.
+. In the vCenter menu, select *Single sign on->Users and groups->Create a new user*.
+. Name the new user *CSARO* under DOMAIN vpshere.local.
+. In the vCenter menu, select *Global Permissions* under *Access Control*.
+. Choose the user *CSARO* and assign ROLE *CSA*.
+. Log in to the Web Client.
 +
-Use user ID: *CSAREADONLY@vsphere.local* and password.
+Use user ID: *CSARO@vsphere.local* and previously created password.
 
 
 ==== Create a read-only account on the APIC

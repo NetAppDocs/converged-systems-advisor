@@ -96,7 +96,7 @@ image:screenshot_system_manager_settings.gif[The settings icon in System Manager
 +
 image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
 
-==== Create an admin account for VMware
+==== Create a read-only account for VMware
 
 .Steps
 
@@ -108,9 +108,9 @@ image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System
 . Select the newly created *CSA* role.
 . Click the *Edit role* icon.
 . Under *Edit role*, choose *Global* and then check *Licenses*.
-. In the vCenter menu, select *Single sign on->Users and groups->Create a new user*.
+. On the sidebar, select *Single sign on->Users and groups->Create a new user*.
 . Name the new user *CSARO* under DOMAIN vpshere.local.
-. In the vCenter menu, select *Global Permissions* under *Access Control*.
+. On the sidebar, select *Global Permissions* under *Access Control*.
 . Choose the user *CSARO* and assign ROLE *CSA*.
 . Log in to the Web Client.
 +

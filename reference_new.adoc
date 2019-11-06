@@ -17,12 +17,13 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 == 7 November 2019
 
+All of the new features and enhancements in this release are automatically included after you add your Flexpod into CSA. Follow the instructions in <<Getting Started>> to add your FlexPod as a Converged Infrastructure into CSA.
+
 This release includes the following new features and enhancements:
+
 * <<MetroCluster Awareness>>
 * <<NVMe Awareness>>
 * <<Improved Interoperability Functionality>>
-
-All of these features and enhancements will be done automatically for you after you add your Flexpod into CSA. Follow the instructions for Getting Started to add your FlexPod into CSA.
 
 === MetroCluster Awareness
 Converged Systems Advisor now supports adding a single site of a MetroCluster FlexPod as a converged infrastructure. Analytics will now be able to determine the health of both sides of the MetroCluster.

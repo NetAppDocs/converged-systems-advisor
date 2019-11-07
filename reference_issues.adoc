@@ -22,7 +22,7 @@ Known issues identify problems that might prevent you from using the service suc
 | Description
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1279956^]
-| Single node MetroCluster does not show the IOXM expansion module in the Overview and Rule summary in the cluster detail page.
+| Single node MetroCluster does not show the IOXM expansion module in the Overview and Rule summary on the cluster detail page.
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1253405^]
 | Nexus switch port status might be displayed incorrectly in Converged Systems Advisor.

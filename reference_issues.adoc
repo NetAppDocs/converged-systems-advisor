@@ -21,7 +21,7 @@ Known issues identify problems that might prevent you from using the service suc
 | Bug ID
 | Description
 
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1279956^]
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1279956[1279956^]
 | Single node MetroCluster does not show the IOXM expansion module in the Overview and Rule summary on the cluster detail page.
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1253405^]

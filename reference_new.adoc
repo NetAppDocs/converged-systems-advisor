@@ -17,7 +17,7 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 == 7 November 2019
 
-All of the new features and enhancements in this release are automatically included after you add your Flexpod into CSA. Follow the instructions in link:task_getting_started.html#getting-task_getting_started>[Getting Started] to add your FlexPod as a Converged Infrastructure into CSA.
+//All of the new features and enhancements in this release are automatically included after you add your Flexpod into CSA. Follow the instructions in link:task_getting_started.html#getting-task_getting_started>[Getting Started] to add your FlexPod as a Converged Infrastructure into CSA.
 
 This release includes the following new features and enhancements:
 

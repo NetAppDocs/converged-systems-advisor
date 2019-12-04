@@ -231,7 +231,7 @@ Converged Systems Advisor supports the following:
 
 . Log in to the agent's virtual machine console.
 
-. Navigate to `/opt/csa/cert`
+. Navigate to `/opt/csa/certs`
 
 . Delete the self-signed certificate that the agent created.
 

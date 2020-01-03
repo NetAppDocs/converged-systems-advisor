@@ -48,3 +48,25 @@ The default user name is `csa` and the default password is `netapp`. You should 
 The bip address can be any non-conflicting IP address. It does not need to be in the 172 range.
 
 . Reboot the virtual machine.
+
+== Unable to connect to agent VM using SSH
+
+SSH for the agent VM is disabled by default.
+
+. To enable SSH, log in to the agent VM via the console in vCenter and run the following commands:
+
+`sudo su`
+`systemctl start ssh`
+
+. To check if SSH is enabled, run the following command:
+
+`systemctl is-enabled ssh`
+
+. To check the status of SSH on the agent VM, run the following command:
+
+`systemctl status ssh`
+
+. To enable SSH to persist across reboots, run the following commands:
+
+`sudo su`
+`systemctl enable ssh`

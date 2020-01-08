@@ -14,8 +14,8 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 
 [.lead]
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
-
-== To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
++
+To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
 
 == 7 November 2019
 

@@ -25,12 +25,12 @@ This release includes the following enhancements:
 * <<Aggregate Details>>
 
 === Navigation Enhancements
-* Storage, Compute, Network, and Virtualization component tiers now have top navigation enhancements with additional inventory/folders in their inventory trees/folder directories. You can use the drop down to view the additional inventory items.
+* Component tiers now have top navigation enhancements with additional folders in their folder directories. You can use the drop down menu and arrows to view the additional items.
 +
-* Bottom navigation in component pages is now available. Once in a component tier, you can use …
+* Bottom navigation in component pages is now available. If you are in a component tier, you can use …
 
-=== Aggregate details
-Disk Space Utilization includes Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in Storage.   
+=== Aggregate Details
+Disk Space Utilization will include Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in the Storage tier.
 
 == 7 November 2019
 

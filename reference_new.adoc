@@ -17,6 +17,21 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
 
+== 23 January 2020
+
+This release includes the following enhancements:
+
+* <<Navigation Enhancements>>
+* <<Aggregate Details>>
+
+=== Navigation Enhancements
+* Storage, Compute, Network, and Virtualization component tiers now have top navigation enhancements with additional inventory/folders in their inventory trees/folder directories. You can use the drop down to view the additional inventory items.
++
+* Bottom navigation in component pages is now available. Once in a component tier, you can use …
+
+=== Aggregate details
+Disk Space Utilization includes Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in Storage.   
+
 == 7 November 2019
 
 //All of the new features and enhancements in this release are automatically included after you add your Flexpod into CSA. Follow the instructions in link:task_getting_started.html#getting-task_getting_started>[Getting Started] to add your FlexPod as a Converged Infrastructure into CSA.

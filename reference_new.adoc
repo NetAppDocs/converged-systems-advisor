@@ -33,7 +33,7 @@ This release includes the following enhancements:
 === Aggregate Details
 Disk Space Utilization will include Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in the Storage tier.
 
-=== Fixed issues
+=== Fixed Issues
 The following known issues have been fixed in this release:
 
 [cols=2*,options="header",cols="12,53"]
@@ -44,6 +44,8 @@ The following known issues have been fixed in this release:
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1279956[1279956^]
 | Single node MetroCluster does not show the IOXM expansion module in the Overview and Rule summary on the cluster detail page.
+
+|===
 
 == 7 November 2019
 

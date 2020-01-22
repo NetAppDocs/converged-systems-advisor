@@ -28,7 +28,9 @@ This release includes the following enhancements:
 === Navigation Enhancements
 * Component tiers now have top navigation enhancements with additional folders in their folder directories. You can use the drop down menu and arrows to view the additional items.
 +
-* Bottom navigation in component pages is now available. If you are in a component tier, you can use …
+* Now you can see all of your systems in View All Systems at the top of the portal.
++
+* Navigation to and from the Dashboard (home) view is available using a breadcrumb trail.
 
 === Aggregate Details
 Disk Space Utilization will include Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in the Storage tier.

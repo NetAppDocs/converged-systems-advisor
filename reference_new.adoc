@@ -37,9 +37,9 @@ image:screenshot-new_storage_dropdown.gif[A screenshot that shows the drop-down 
 === Aggregate details
 In the Dashboard view, when you go to Capacity, you can now see a link to Aggregate Details. You can use the link provided to see detailed information about your aggregates in the Storage tier.
 
-image:screenshot-redcloud_new-capacity-card.gif[A screenshot that shows where to click to go to the new link to Aggregate Details under Capacity.]
+image:screenshot_redcloud_new-capacity-card.gif[A screenshot that shows where to click to go to the new link to Aggregate Details under Capacity.]
 
-image:screenshot-redcloud_new-aggregate_details.gif[A screenshot that shows new aggregate details in Storage component tier.]
+image:screenshot_redcloud_new-aggregate_details.gif[A screenshot that shows new aggregate details in Storage component tier.]
 
 === Fixed issues
 The following known issues have been fixed in this release:

@@ -21,21 +21,25 @@ To confirm FlexPod components are supported by the CSA agent, reference the http
 
 This release includes the following enhancements:
 
-* <<Navigation Enhancements>>
-* <<Aggregate Details>>
-* <<Fixed Issues>>
+* <<Navigation enhancements>>
+* <<Aggregate details>>
+* <<Fixed issues>>
 
-=== Navigation Enhancements
-* Component tiers now have top navigation enhancements with additional folders in their folder directories. You can use the drop down menu and arrows to view the additional items.
+=== Navigation enhancements
+* This release makes it easier for you to see and navigate through the structure of your component tiers. You can use the drop down menu and arrows to view the additional items.
+
+image:screenshot-new_storage_dropdown.gif[A screenshot that shows the drop-down navigation of the storage component tier.]
 +
-* Now you can see all of your systems in View All Systems at the top of the portal.
+* Now you can see all of your systems in View All Systems.
 +
-* Navigation to and from the Dashboard (home) view is available using a breadcrumb trail.
+* It's now easier to navigate to and from the Dashboard (home) view using a breadcrumb trail.
 
-=== Aggregate Details
-Disk Space Utilization will include Aggregate Details under Capacity. You can now use the link provided to see detailed information about your aggregates in the Storage tier.
+=== Aggregate details
+In the Dashboard view, when you go to Capacity, you will now see a link to Aggregate Details. You can use the link provided to see detailed information about your aggregates in the Storage tier.
 
-=== Fixed Issues
+image:screenshot-aggregate_details_link.gif[A screenshot that shows where to click to go to the new link to Aggregate Details under Capacity.]
+
+=== Fixed issues
 The following known issues have been fixed in this release:
 
 [cols=2*,options="header",cols="12,53"]
@@ -55,17 +59,17 @@ The following known issues have been fixed in this release:
 
 This release includes the following new features and enhancements:
 
-* <<MetroCluster Awareness>>
-* <<NVMe Awareness>>
-* <<Improved Interoperability Functionality>>
+* <<MetroCluster awareness>>
+* <<NVMe awareness>>
+* <<Improved interoperability functionality>>
 
-=== MetroCluster Awareness
+=== MetroCluster awareness
 Converged Systems Advisor now supports adding a single site of a MetroCluster FlexPod as a converged infrastructure. Analytics will now be able to determine the health of both sides of the MetroCluster.
 
-=== NVMe Awareness
+=== NVMe awareness
 Converged Systems Advisor will now run analytics to check the configuration of the NVMe protocol which is supported on ONTAP 9.4 and above.
 
-=== Improved Interoperability Functionality
+=== Improved interoperability functionality
 Converged Systems Advisor has an updated interoperability card that will link to a pop up that shows the current, nearest, and latest versions supported for each component. A new report has been added in the pop up to show an individualized Interoperability report per component tier.
 
 

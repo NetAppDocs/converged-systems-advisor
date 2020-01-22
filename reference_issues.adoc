@@ -28,7 +28,7 @@ Known issues identify problems that might prevent you from using the service suc
 | After creating multiple remediation jobs with collection enabled, collection is triggered only for the first remediation job.
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234597[1234597^]
-| Converged Systems Advisor does not remediate the DNS configuration for more than 4 SVMs.
+| Converged Systems Advisor does not remediate the DNS configuration for more than four SVMs.
 
 |===
 

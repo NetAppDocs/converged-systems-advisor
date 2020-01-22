@@ -29,13 +29,13 @@ This release includes the following enhancements:
 * This release makes it easier for you to see and navigate through the structure of your component tiers. You can use the drop down menu and arrows to view the additional items.
 
 image:screenshot-new_storage_dropdown.gif[A screenshot that shows the drop-down navigation of the storage component tier.]
-+
+
 * Now you can see all of your systems in View All Systems.
 +
 * It's now easier to navigate to and from the Dashboard (home) view using a breadcrumb trail.
 
 === Aggregate details
-In the Dashboard view, when you go to Capacity, you will now see a link to Aggregate Details. You can use the link provided to see detailed information about your aggregates in the Storage tier.
+In the Dashboard view, when you go to Capacity, you can now see a link to Aggregate Details. You can use the link provided to see detailed information about your aggregates in the Storage tier.
 
 image:screenshot-aggregate_details_link.gif[A screenshot that shows where to click to go to the new link to Aggregate Details under Capacity.]
 

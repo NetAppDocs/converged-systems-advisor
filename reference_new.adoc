@@ -26,11 +26,11 @@ This release includes the following enhancements:
 * <<Fixed issues>>
 
 === Navigation enhancements
-* This release makes it easier for you to see and navigate through the structure of your component tiers. You can use the drop down menu and arrows to view the additional items.
+* This release makes it possible for you to see all of your systems in View All Systems.
 +
-* Now you can see all of your systems in View All Systems.
+* It's easier for you to see and navigate through the structure of your component tiers. You can use the drop-down menu and arrows to view your devices.
 +
-* It's now easier to navigate to and from the Dashboard (home) view using a breadcrumb trail.
+* It's also easier to navigate to and from the Dashboard (home) view using a breadcrumb trail.
 
 image:screenshot-new_storage_dropdown.gif[A screenshot that shows the drop-down navigation of the storage component tier.]
 

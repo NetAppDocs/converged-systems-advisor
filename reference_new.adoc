@@ -17,23 +17,61 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
 
+== 23 January 2020
+
+This release includes the following enhancements:
+
+* <<Navigation enhancements>>
+* <<Aggregate details>>
+* <<Fixed issues>>
+
+=== Navigation enhancements
+* This release makes it possible for you to see all of your systems in View All Systems.
++
+* It's easier for you to see and navigate through the structure of your component tiers. You can use the drop-down menu and arrows to view your devices.
++
+* It's also easier to navigate to and from the Dashboard (home) view using a breadcrumb trail.
+
+image:screenshot-new_storage_dropdown.gif[A screenshot that shows the drop-down navigation of the storage component tier.]
+
+=== Aggregate details
+In the Dashboard view, when you go to Capacity, you can now see a link to Aggregate Details. You can use the link provided to see detailed information about your aggregates in the Storage tier.
+
+image:screenshot_redcloud_new-capacity-card.gif[A screenshot that shows where to click to go to the new link to Aggregate Details under Capacity.]
+
+image:screenshot_redcloud_new-aggregate_details.gif[A screenshot that shows new aggregate details in Storage component tier.]
+
+=== Fixed issues
+The following known issues have been fixed in this release:
+
+[cols=2*,options="header",cols="12,53"]
+|===
+
+| Bug ID
+| Description
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1279956[1279956^]
+| Single node MetroCluster does not show the IOXM expansion module in the Overview and Rule summary on the cluster detail page.
+
+|===
+
 == 7 November 2019
 
 //All of the new features and enhancements in this release are automatically included after you add your Flexpod into CSA. Follow the instructions in link:task_getting_started.html#getting-task_getting_started>[Getting Started] to add your FlexPod as a Converged Infrastructure into CSA.
 
 This release includes the following new features and enhancements:
 
-* <<MetroCluster Awareness>>
-* <<NVMe Awareness>>
-* <<Improved Interoperability Functionality>>
+* <<MetroCluster awareness>>
+* <<NVMe awareness>>
+* <<Improved interoperability functionality>>
 
-=== MetroCluster Awareness
+=== MetroCluster awareness
 Converged Systems Advisor now supports adding a single site of a MetroCluster FlexPod as a converged infrastructure. Analytics will now be able to determine the health of both sides of the MetroCluster.
 
-=== NVMe Awareness
+=== NVMe awareness
 Converged Systems Advisor will now run analytics to check the configuration of the NVMe protocol which is supported on ONTAP 9.4 and above.
 
-=== Improved Interoperability Functionality
+=== Improved interoperability functionality
 Converged Systems Advisor has an updated interoperability card that will link to a pop up that shows the current, nearest, and latest versions supported for each component. A new report has been added in the pop up to show an individualized Interoperability report per component tier.
 
 

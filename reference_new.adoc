@@ -23,7 +23,6 @@ This release includes the following enhancements:
 
 * <<Navigation enhancements>>
 * <<Aggregate details>>
-* <<Fixed issues>>
 
 === Navigation enhancements
 * This release makes it possible for you to see all of your systems in View All Systems.
@@ -96,7 +95,6 @@ This release includes the following new features and enhancements:
 
 * <<Automatically resolving failed rules>>
 * <<Displaying suppressed rules>>
-* <<Fixed issues>>
 
 === Automatically resolving failed rules
 
@@ -164,7 +162,6 @@ This release includes the following new features and enhancements:
 * <<Simplified experience when adding an infrastructure>>
 * <<Device import using a file>>
 * <<Integration with NetApp Active IQ>>
-* <<Fixed issues>>
 
 === Support for new FlexPod devices
 

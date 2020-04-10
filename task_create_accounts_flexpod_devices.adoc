@@ -12,13 +12,14 @@ summary: To get started, set up accounts for FlexPod devices.
 :linkattrs:
 :imagesdir: ./media/
 
-[.lead]
 To get started, set up accounts for FlexPod devices:
+
 •	CISCO UCS Manager
 •	CISCO Nexus switches
 •	ONTAP
 •	VMware
 •	APIC
+
 The agent uses these accounts to collect configuration from each device.
 
 == Create a read-only account for Cisco UCS Manager
@@ -43,7 +44,7 @@ TIP: All new users are read-only by default.
 +
  copy running configuration startup configuration
 
-If you are using a TACACS+ server and you need to grant CSA user privileges, go to <<Granting CSA user privileges using a TACACS+ server>>.
+If you are using a TACACS+ server and you need to grant CSA user privileges, go to link:task_grant_user_privileges.html[Granting CSA user privileges using a TACACS+ server].
 
 == Create an admin account for ONTAP
 

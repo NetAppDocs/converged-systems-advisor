@@ -16,10 +16,10 @@ summary: Deploy the Converged Systems Advisor agent on a VMware ESXi server.
 You must deploy the Converged Systems Advisor agent on a VMware ESXi server. The agent collects configuration data about each device in your FlexPod converged infrastructure and sends that data to the Converged Systems Advisor portal.
 
 .Steps
-. <<Downloading and installing the agent,Download and install the agent>>
-. <<Setting up networking for the agent,Set up networking for the agent>>
-. <<Installing an SSL certificate on the agent,If needed, install an SSL certificate on the agent>>
-. <<Configuring the agent to discover your FlexPod infrastructure, Configure the agent to discover your FlexPod infrastructure>>
+. <<Download and install the agent>>
+. <<Set up networking for the agent>>
+. <<Install an SSL certificate on the agent>>
+. <<Configure the agent to discover your FlexPod infrastructure>>
 
 == Download and install the agent
 You must deploy the Converged Systems Advisor agent on a VMware ESXi server.
@@ -78,7 +78,8 @@ A broadcast message appears on the console when the agent is operational.
 +
 If the command fails, verify DNS settings. The agent virtual machine must have a valid DNS configuration and the ability to reach csa.netapp.com.
 
-== Installing an SSL certificate on the agent
+== Install an SSL certificate on the agent
+Optional: If needed, install an SSL certificate on the agent.
 
 The agent creates a self-signed certificate when the virtual machine boots for the first time. If required, you can delete that certificate and use your own SSL certificate.
 .About this task
@@ -93,7 +94,7 @@ Converged Systems Advisor supports the following:
 . Paste your SSL certificate.
 . Restart the virtual machine.
 
-== Configuring the agent to discover your FlexPod infrastructure
+== Configure the agent to discover your FlexPod infrastructure
 
 You must configure the agent to collect configuration data from each device in your FlexPod converged infrastructure.
 The agent requires credentials to collect configuration data. You must provide the credentials when you configure the agent.

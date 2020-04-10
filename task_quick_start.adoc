@@ -48,3 +48,15 @@ link:task_grant_user_privileges.html[Grant CSA user privileges using a TACACS+ s
 [role="quick-margin-para"]
 With a Premium license, you can set up notifications which alert you about changes to your FlexPod infrastructure through email notifications.
 link:task_configure_notifications.html[Configure notifications]
+
+==== 7. Deployment validation reports for partners
+
+[role="quick-margin-para"]
+NetApp partners can run a deployment validation to verify that a FlexPod converged infrastructure is configured correctly. Partners can then hand off the report to customers.
+link:task_deployment_validation.html[Deployment validation reports for partners]
+
+==== 8. Set a static ip address
+
+[role="quick-margin-para"]
+If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
+link:task_setting_static_ip[Set a static ip address on the agent]

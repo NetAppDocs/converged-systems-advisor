@@ -27,7 +27,7 @@ TIP: When you select a device, the Eligibility column displays either *Eligible*
 
 +
 Once you have selected all of the required components, you should see a green checkmark next to each device type.
-+
+
 image:screenshot_add_infrastructure_pikesupdate.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
 
 .. Add your link:concept_licensing.html[Converged Systems Advisor serial number] to unlock key functionality.

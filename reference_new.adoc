@@ -43,6 +43,8 @@ The following known issues have been fixed in this release:
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1253405^]
 | Nexus switch port status might be displayed incorrectly in Converged Systems Advisor.
 
+|===
+
 == 3 February 2020
 
 This release includes the following enhancements:

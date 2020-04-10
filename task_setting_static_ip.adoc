@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task_set_static_ip.html
+permalink: task_setting_static_ip.html
 keywords: networking, ip address, static, static ip, agent
 summary: If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
 ---

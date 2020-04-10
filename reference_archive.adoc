@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference_archive.html
-keywords: new, features, whats new, enhancements, release notes
+keywords: archive, new, features, whats new, enhancements, release notes
 summary: NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 ---
 

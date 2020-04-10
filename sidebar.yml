@@ -25,6 +25,20 @@ entries:
     entries:
       - title: Getting started
         url: /task_getting_started.html
+      - title: Quick start
+        url: /task_quick_start.html
+      - title: Prepare your environment
+        url: /task_prepare_environment.html
+      - title: Create accounts on Flexpod
+        url: /task_create_accounts_flexpod_devices.html
+      - title: Set up and deploy agent
+        url: /task_setup_deploy_agent.html
+      - title: Add infrastructure in the portal
+        url: /task_add_infrastructure.html
+      - title: Grant user privileges
+        url: /task_grant_user_privileges.html
+      - title: Configure
+        url: /task_configure_notifications.html
       - title: Deployment validation report for partners
         url: /task_deployment_validation.html
       - title: Setting a static IP on the agent

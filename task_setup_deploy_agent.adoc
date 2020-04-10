@@ -1,0 +1,115 @@
+---
+sidebar: sidebar
+permalink: task_setup_deploy_agent.html
+keywords: setup, deploy, FlexPod, configuration, VMware, ESXi server, FlexPod, converged, infrastructure, data, agent
+summary: Deploy the Converged Systems Advisor agent on a VMware ESXi server.
+---
+
+= Setup and deploy the agent
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You must deploy the Converged Systems Advisor agent on a VMware ESXi server. The agent collects configuration data about each device in your FlexPod converged infrastructure and sends that data to the Converged Systems Advisor portal.
+
+.Steps
+. <<Downloading and installing the agent,Download and install the agent>>
+. <<Setting up networking for the agent,Set up networking for the agent>>
+. <<Installing an SSL certificate on the agent,If needed, install an SSL certificate on the agent>>
+. <<Configuring the agent to discover your FlexPod infrastructure, Configure the agent to discover your FlexPod infrastructure>>
+
+== Download and install the agent
+You must deploy the Converged Systems Advisor agent on a VMware ESXi server.
+
+.About this task
+To minimize bandwidth usage, you should install the agent on a VMware ESXi server that is in the same data center as the FlexPod configuration. The agent must have connectivity to each FlexPod component and to the internet so it can send configuration data to the Converged Systems Advisor portal using HTTPS port 443.
+The agent is deployed as a VMware vSphere virtual machine from an Open Virtualization Format (OVF) template. The template is Debian-based with 1 vCPU and 2 GB of RAM (more may be needed for multiple or larger FlexPod systems).
+.Steps
+. Download the agent:
+.. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^].
+.. Click *Download Agent*.
+. Install the agent by deploying the OVF template on the VMware ESXi server.
++
+On some versions of VMware, you might receive a warning when deploying the OVF template. The virtual machine was developed on the latest version of VCenter with hardware compatibility for older versions, which might result in the warning. You should review the configuration options prior to acknowledging the warning and then proceed with installation.
+
+== Set up networking for the agent
+You must ensure that networking is set up correctly on the agent virtual machine to enable communication between the agent and FlexPod devices and between the agent and several internet endpoints. Note that the networking stack is disabled on the virtual machine until the system initializes.
+
+.Steps
+. Ensure that an outbound internet connection enables access to the following endpoints:
+* csa.netapp.com
+* docker.com
+* docker.io
+. Log in to the agent's virtual machine console using the VMware vSphere client.
++
+The default user name is `csa` and the default password is `netapp`.
++
+TIP: For security purposes, SSHD is disabled by default.
+
+. When prompted, change the default password and make note of the password, because it cannot be recovered.
++
+After you change the password, the system reboots and starts the agent software.
+. If DHCP is not available in the subnet, configure a static IP address and DNS settings using standard Debian tools, and then reboot the agent.
++
+link:task_setting_static_ip.html[Click here for detailed instructions].
++
+The network configuration for the Debian virtual machine defaults to DHCP. NetworkManager is installed and provides a text user interface that you can start from the command nmtui (see the https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html[man page^] for more details).
++
+For additional help with networking, see https://wiki.debian.org/NetworkConfiguration[the network configuration page on the Debian wiki^].
+. If your security policies dictate that the agent must be on one network to communicate with FlexPod devices and another network to communicate with the internet, add a second network interface in VCenter and configure the correct VLANs and IP addresses.
+. If a proxy server is required for internet access, run the following command:
++
+`sudo csa_set_proxy`
++
+The command generates two prompts and shows the required format for the proxy entry. The first prompt enables you to specify an HTTP proxy, while the second enables you to specify an HTTPS proxy.
++
+Here's the prompt for the HTTP proxy:
++
+image:screenshot_http_proxy.gif[A screenshot that shows the HTTP proxy prompt.]
+. Once the network is up, wait approximately 5 minutes for the system to update and start.
++
+A broadcast message appears on the console when the agent is operational.
+. Verify connectivity by running the following CLI command from the agent:
++
+ curl -k https://www.netapp.com/us/index.aspx
++
+If the command fails, verify DNS settings. The agent virtual machine must have a valid DNS configuration and the ability to reach csa.netapp.com.
+
+== Installing an SSL certificate on the agent
+
+The agent creates a self-signed certificate when the virtual machine boots for the first time. If required, you can delete that certificate and use your own SSL certificate.
+.About this task
+Converged Systems Advisor supports the following:
+* Any cipher compatible with OpenSSL version 1.0.1 or greater
+* TLS 1.1 and TLS 1.2
+
+.Steps
+. Log in to the agent's virtual machine console.
+. Navigate to `/opt/csa/certs`
+. Delete the self-signed certificate that the agent created.
+. Paste your SSL certificate.
+. Restart the virtual machine.
+
+== Configuring the agent to discover your FlexPod infrastructure
+
+You must configure the agent to collect configuration data from each device in your FlexPod converged infrastructure.
+The agent requires credentials to collect configuration data. You must provide the credentials when you configure the agent.
+.Steps
+. Open a web browser and enter the IP address of the agent virtual machine.
+. Log in to the agent by entering the user name and password of your NetApp Support Site account.
+. Add the FlexPod devices that you want the agent to discover.
++
+You have two options:
+.. Click *Add a device* to enter details about your FlexPod devices, one by one.
+.. Click *Import devices* to fill out and upload a CSV template that includes details about all devices.
++
+Note the following:
+* The user name and password should be for the account that you previously created for the device.
+* If your UCS environment has LDAP user management configured, then you must add the user’s domain before the user name. For example: local\csa-readonly
+
+.Result
+Each device in the FlexPod infrastructure should display in the table with a checkmark.
+image:screenshot_agent_configuration.gif[Shows each required device with a green checkmark in the Status column.]

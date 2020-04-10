@@ -42,7 +42,7 @@ entries:
       - title: Deployment validation report for partners
         url: /task_deployment_validation.html
       - title: Set a static IP on the agent
-        url: /task_set_static_ip.html
+        url: /task_setting_static_ip.html
   - title: Monitoring your infrastructure
     url: /task_monitoring.html
   - title: Troubleshooting

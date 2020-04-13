@@ -39,8 +39,6 @@ entries:
         url: /task_grant_user_privileges.html
       - title: Configure notifications
         url: /task_configure_notifications.html
-      - title: Deployment validation report for partners
-        url: /task_deployment_validation.html
       - title: Set a static IP on the agent
         url: /task_setting_static_ip.html
   - title: Monitoring your infrastructure

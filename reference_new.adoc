@@ -25,11 +25,11 @@ This release includes the following enhancements:
 * <<System diagram alerts>>
 
 === Upgrade Advisor
-This new feature makes it possible for you to check compatibility for your VMware Vcenter version with your Nexus and UCS components. To check compability, select VMware, then the Vcenter version, and ONTAP version. All versions you see are supported.
+Now you can check compatibility for your VMware Vcenter and ONTAP versions with your Nexus and UCS components. To check compability, use Upgrade Advisor in the dashboard under Firmware Interoperability. All versions you see are supported.
 image:
 
 === Capacity card enhancements
-In the Dashboard view, when you go to Capacity, you'll see two new links. Port Utilization links to the network and UCS Blade Server Utilization links to compute. These new links are helpful for FlexPod expansion.
+Links to network port utilization and UCS Blade Server utilization have been added to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links. Port Utilization links to the network and UCS Blade Server Utilization links to compute. 
 You can use the links provided to see detailed information about your network interfaces and UCS Blade Server utilizations in the Storage tier.
 
 === System diagram alerts

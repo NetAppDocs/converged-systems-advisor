@@ -53,4 +53,4 @@ link:task_configure_notifications.html[Configure notifications]
 
 [role="quick-margin-para"]
 If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
-link:task_setting_static_ip[Set a static ip address on the agent]
+link:task_setting_static_ip.html[Set a static ip address on the agent]

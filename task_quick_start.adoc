@@ -37,25 +37,19 @@ link:task_setup_deploy_agent.html[Deploy the agent].
 Add each FlexPod device to the Converged Systems Advisor portal to create an entire infrastructure that you can monitor. You can also share a converged infrastructure to enable another person to log in to the portal so they can view and monitor the configuration.
 link:task_add_and_share_infrastructure.html[Add and share infrastructure in the portal].
 
-==== 5. Grant CSA user privileges using a TACACS+ server
+==== image:number5.png[number5] Grant CSA user privileges using a TACACS+ server
 
 [role="quick-margin-para"]
 For those who use a TACACS+ server, you need to grant CSA user privileges for your switches, create a user privilege group and grant the group access to the specific set up commands needed by CSA.
 link:task_grant_user_privileges.html[Grant CSA user privileges using a TACACS+ server]
 
-==== 6. Configure notifications
+==== image:number6.png[number6] Configure notifications
 
 [role="quick-margin-para"]
 With a Premium license, you can set up notifications which alert you about changes to your FlexPod infrastructure through email notifications.
 link:task_configure_notifications.html[Configure notifications]
 
-==== 7. Deployment validation reports for partners
-
-[role="quick-margin-para"]
-NetApp partners can run a deployment validation to verify that a FlexPod converged infrastructure is configured correctly. Partners can then hand off the report to customers.
-link:task_deployment_validation.html[Deployment validation reports for partners]
-
-==== 8. Set a static ip address
+==== image:number7.png[number7] Set a static ip address
 
 [role="quick-margin-para"]
 If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.

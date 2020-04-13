@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: task_review_infrastructure_history.html
+keywords: review, history, converged, infrastructure, configuration, resolve, issue, warnings, failures, collected, collections, data
+summary: When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
+---
+
+= Reviewing the history for an infrastructure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
+
+.Steps
+
+. Select a converged infrastructure.
+
+. Click *More > History*.
++
+image:screenshot_history_navigation.gif[Shows the More menu which includes the history option.]
+
+. Click a day on the calendar to view the number of warnings and failures that were identified during each data collection.
++
+TIP: The number that appears for each day corresponds to the number of times that the agent collected data. For example, if you keep the default collection interval of 24 hours, you should see one collection per day.
++
+The following image shows a single collection on the 27th of the month.
++
+image:screenshot_history_status.gif[Shows the number one and one yellow dot on the 27th of the month.]
+
+. To view more details about the data that was collected, click *Go to CI Dashboard* for a collection.
+
+. If needed, view the history for the last time that no warnings or failures were identified.
++
+Comparing the data between the two collection periods can help you identify what changed.

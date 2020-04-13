@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: task_track_support_contracts.html
+keywords: track, support, contracts, renew, converged, infrastructure, device, devices,
+summary: You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID.
+---
+
+= Tracking support contracts
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID. This enables you to easily track the details in a central location so you know when to renew support contracts for each device.
+
+.Steps
+
+. Click *Select a CI* and select the converged infrastructure.
+
+. In the Support Contract widget, click the *Edit contract* icon.
+
+. Select the *Start Date* and *End Date* and enter the *Contract ID*.
+
+. Click *Submit*.
+
+. Repeat the steps for each device in the configuration.
+
+.Result
+
+Converged Systems Advisor now displays the support contract details for each device. You can easily see which devices have active and expired support contracts.
+
+image:screenshot_support_contracts.gif[Shows four support contracts: one is expired and the other three are active.]

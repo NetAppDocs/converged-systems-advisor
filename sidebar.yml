@@ -44,7 +44,15 @@ entries:
       - title: Set a static IP on the agent
         url: /task_setting_static_ip.html
   - title: Monitoring your infrastructure
-    url: /task_monitoring.html
+    entries:
+      - title: Review your infrastructure history
+        url: /task_review_infrastructure_history.html
+      - title: Monitor rules
+        url: /task_monitor_rules.html
+      - title: Generate reports
+        url: /task_generate_reports.html
+      - title: Track support contracts
+        url: /task_track_support_contracts.html
   - title: Troubleshooting
     url: /task_troubleshooting.html
   - title: Related links

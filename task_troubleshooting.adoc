@@ -5,7 +5,7 @@ keywords: troubleshoot, agent, connectivity, browser, discover, error, internet,
 summary: If you encounter a problem while using Converged Systems Advisor, the following information might help you resolve the issue.
 ---
 
-= Troubleshooting Converged Systems Advisor
+= Troubleshoot Converged Systems Advisor
 :hardbreaks:
 :nofooter:
 :icons: font

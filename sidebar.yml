@@ -50,7 +50,7 @@ entries:
       - title: Generate reports
         url: /task_generate_reports.html
       - title: Track support contracts
-        url: /task_track_support_contracts.html
+        url: /task_track_contracts.html
   - title: Troubleshooting
     url: /task_troubleshooting.html
   - title: Related links

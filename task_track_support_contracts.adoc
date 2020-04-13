@@ -5,7 +5,7 @@ keywords: track, support, contracts, renew, converged, infrastructure, device, d
 summary: You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID.
 ---
 
-= Tracking support contracts
+= Track support contracts
 :hardbreaks:
 :nofooter:
 :icons: font

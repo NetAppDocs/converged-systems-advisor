@@ -86,6 +86,7 @@ The agent creates a self-signed certificate when the virtual machine boots for t
 
 .About this task
 Converged Systems Advisor supports the following:
++
 * Any cipher compatible with OpenSSL version 1.0.1 or greater
 * TLS 1.1 and TLS 1.2
 
@@ -107,6 +108,7 @@ The agent requires credentials to collect configuration data. You must provide t
 . Add the FlexPod devices that you want the agent to discover.
 +
 You have two options:
++
 .. Click *Add a device* to enter details about your FlexPod devices, one by one.
 .. Click *Import devices* to fill out and upload a CSV template that includes details about all devices.
 +

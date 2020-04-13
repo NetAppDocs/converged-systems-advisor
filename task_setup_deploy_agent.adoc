@@ -27,6 +27,7 @@ You must deploy the Converged Systems Advisor agent on a VMware ESXi server.
 .About this task
 To minimize bandwidth usage, you should install the agent on a VMware ESXi server that is in the same data center as the FlexPod configuration. The agent must have connectivity to each FlexPod component and to the internet so it can send configuration data to the Converged Systems Advisor portal using HTTPS port 443.
 The agent is deployed as a VMware vSphere virtual machine from an Open Virtualization Format (OVF) template. The template is Debian-based with 1 vCPU and 2 GB of RAM (more may be needed for multiple or larger FlexPod systems).
+
 .Steps
 . Download the agent:
 .. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^].
@@ -82,6 +83,7 @@ If the command fails, verify DNS settings. The agent virtual machine must have a
 Optional: If needed, install an SSL certificate on the agent.
 
 The agent creates a self-signed certificate when the virtual machine boots for the first time. If required, you can delete that certificate and use your own SSL certificate.
+
 .About this task
 Converged Systems Advisor supports the following:
 * Any cipher compatible with OpenSSL version 1.0.1 or greater
@@ -98,6 +100,7 @@ Converged Systems Advisor supports the following:
 
 You must configure the agent to collect configuration data from each device in your FlexPod converged infrastructure.
 The agent requires credentials to collect configuration data. You must provide the credentials when you configure the agent.
+
 .Steps
 . Open a web browser and enter the IP address of the agent virtual machine.
 . Log in to the agent by entering the user name and password of your NetApp Support Site account.

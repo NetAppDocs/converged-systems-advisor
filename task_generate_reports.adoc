@@ -12,7 +12,7 @@ summary: You can generate several types of reports, such as a health report or a
 :linkattrs:
 :imagesdir: ./media/
 
-If you have a Premium license, you can generate several types of reports that provide details about the current status of your converged infrastructure: an inventory report, a health report, an assessment report, and more.
+If you have a Premium license, you can generate several types of reports that provide details about the current status of your converged infrastructure: an inventory report, a health report, an assessment report, a deployment validation report for partners, and more.
 
 .Steps
 

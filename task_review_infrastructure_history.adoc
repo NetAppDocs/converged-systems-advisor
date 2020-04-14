@@ -5,7 +5,7 @@ keywords: review, history, converged, infrastructure, configuration, resolve, is
 summary: When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
 ---
 
-= Reviewing the history for an infrastructure
+= Review the history for an infrastructure
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -32,10 +32,10 @@ image:screenshot_upgrade_advisor_screen_with_selections.png[Image shows upgrade 
 Links to network port utilization and UCS Blade Server utilization have been added to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links.
 image:screenshot_capacity_card_with_port_and_UCS_blade_utilization.png[Image shows capacity card with new links to port and UCS blade utilization]
 
-Port Utilization links to the network.
+Port Utilization links to detailed information for interfaces in the Network tier.
 image:screenshot_network_port_utilization_screen.png[Image shows network port utilization details screen under network]
 
-UCS Blade Server Utilization links to compute.
+UCS Blade Server Utilization links to detailed information for blades in the Compute tier.
 image:screenshot_compute_detailed_information_for_UCS_blade_utilization.png[Image shows compute detailed information for UCS blade utilization]
 
 === System diagram alerts

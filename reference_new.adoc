@@ -21,12 +21,17 @@ To confirm FlexPod components are supported by the CSA agent, reference the http
 This release includes the following enhancements:
 
 * <<Upgrade Advisor>>
+* <<Cluster interconnect switch>>
 * <<Capacity card enhancements>>
 * <<System diagram alerts>>
 
 === Upgrade Advisor
 Now you can check compatibility for your VMware Vcenter and ONTAP versions with your Nexus and UCS components. To check compability, use Upgrade Advisor in the dashboard under Firmware Interoperability. All versions you see are supported.
-image:screenshot_upgrade_advisor_screen_with_selections.png[Image shows upgrade advisor screen with compatibility selections]
+image:screenshot_upgrade_advisor_screen_no_change.png[Image shows upgrade advisor screen with compatibility selections]
+
+=== Cluster interconnect switch
+We added cluster interconnect switch (CIS) in the dashboard view under Firmware Operability. Now you can monitor the supportability of your UCS cluster interconnect switches.  
+image:screenshot_firmware_interoperability_CIS.png[Image shows highlight of cluster interconnect switch in firmware interoperability]
 
 === Capacity card enhancements
 Links to network port utilization and UCS Blade Server utilization have been added to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links.

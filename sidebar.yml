@@ -27,7 +27,7 @@ entries:
         url: /task_quick_start.html
       - title: Prepare your environment
         url: /task_prepare_environment.html
-      - title: Create accounts on FlexPod
+      - title: Create accounts for FlexPod devices
         url: /task_create_accounts_flexpod_devices.html
       - title: Set up and deploy agent
         url: /task_setup_deploy_agent.html

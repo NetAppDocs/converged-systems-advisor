@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task_track_contracts.html
 keywords: track, support, contracts, renew, converged, infrastructure, device, devices,
-summary: You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID.
+summary: You can add details about support contracts for each device in a configuration including the start date, end date, and contract ID.
 ---
 
 = Track support contracts

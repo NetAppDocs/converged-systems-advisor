@@ -40,7 +40,7 @@ image:screenshot_firmware_interoperability_CIS.png[Image shows highlight of clus
 
 In the agent, you'll also find that you can add Cisco CIS as a device in the Add a device drop-down menu.
 
-image:screenshot_add_device.jpg[Image shows add a device drop-down menu in the agent]
+image:screenshot_add_device_cis.png[Image shows add a device drop-down menu in the agent]
 
 === Capacity card enhancements
 We also added links to network port utilization and UCS Blade Server utilization to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links.

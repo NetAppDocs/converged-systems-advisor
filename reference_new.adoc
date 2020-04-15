@@ -38,7 +38,7 @@ In the portal, we added cluster interconnect switch (CIS) under Firmware Interop
 
 image:screenshot_firmware_interoperability_CIS.png[Image shows highlight of cluster interconnect switch in firmware interoperability]
 
-In the agent, you'll also find that you can add Cisco CIS as a device in the Add a device drop-down menu.
+In the agent, you can now add a cluster interconnect switch as a device in the Add a device drop-down menu.
 
 image:screenshot_add_device_cis.png[Image shows add a device drop-down menu in the agent]
 

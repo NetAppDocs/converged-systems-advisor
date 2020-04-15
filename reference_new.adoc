@@ -30,13 +30,17 @@ Now you can check compatibility for your VMWare vCenter and ONTAP versions with 
 image:screenshot_upgrade_advisor_screen_no_change.png[Image shows upgrade advisor screen with compatibility selections]
 
 === Cluster interconnect switch
-We added cluster interconnect switch (CIS) under Firmware Interoperability in the dashboard view. Now you can monitor the supportability of ONTAP cluster interconnect switches for the following models:
+In the portal, we added cluster interconnect switch (CIS) under Firmware Interoperability in the Dashboard view. Now you can monitor the supportability of ONTAP cluster interconnect switches for the following models:
 
 * Cisco Nexus 3132Q-V
 * Cisco Nexus 3232C
 * Cisco Nexus 92300YC
 
 image:screenshot_firmware_interoperability_CIS.png[Image shows highlight of cluster interconnect switch in firmware interoperability]
+
+In the agent, you'll also find that you can add Cisco CIS as a device in the Add a device drop-down menu.
+
+image:screenshot_add_device.jpg[Image shows add a device drop-down menu in the agent]
 
 === Capacity card enhancements
 We also added links to network port utilization and UCS Blade Server utilization to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links.

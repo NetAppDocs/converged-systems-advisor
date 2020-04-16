@@ -23,7 +23,7 @@ Verify support for your configuration.  link:task_prepare_environment.html[Prepa
 
 [role="quick-margin-para"]
 Set up accounts in Cisco UCS Manager, on your Cisco Nexus switches, for your ONTAP systems, for VMware, and on the APIC. These accounts are used by the agent to collect configuration data.
-link:task_create_accounts_flexpod_devices[Create accounts on Flexpod devices].
+link:task_create_accounts_flexpod_devices.html[Create accounts on Flexpod devices].
 
 ==== image:number3.png[number3] Set up and deploy the agent
 
@@ -35,7 +35,7 @@ link:task_setup_deploy_agent.html[Deploy the agent].
 
 [role="quick-margin-para"]
 Add each FlexPod device to the Converged Systems Advisor portal to create an entire infrastructure that you can monitor. You can also share a converged infrastructure to enable another person to log in to the portal so they can view and monitor the configuration.
-link:task_add_and_share_infrastructure.html[Add and share infrastructure in the portal].
+link:task_add_infrastructure.html[Add and share infrastructure in the portal].
 
 ==== image:number5.png[number5] Grant CSA user privileges using a TACACS+ server
 

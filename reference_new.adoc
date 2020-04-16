@@ -54,7 +54,7 @@ image:screenshot_compute_detailed_information_for_UCS_blade_utilization.png[Imag
 
 === System diagram alerts
 You'll now see alerts in the diagram views of your system so you can monitor your infrastructure better.
-image:screenshot_alert_bubble_on_diagram.jpg[Image shows diagram view with alert bubble]
+image:screenshot_diagram_with_alert_bubble.jpg[Image shows diagram view with alert bubble]
 
 === Fixed issues
 The following known issues have been fixed in this release:

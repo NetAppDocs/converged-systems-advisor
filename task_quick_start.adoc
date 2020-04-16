@@ -12,6 +12,7 @@ summary: Getting started with Converged Systems Advisor agent and portal include
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 Getting started with Converged Systems Advisor agent and portal for Flexpod includes a few steps.
 
 ==== image:number1.png[number 1] Prepare your environment

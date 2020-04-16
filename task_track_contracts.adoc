@@ -12,6 +12,7 @@ summary: You can add details about support contracts for each device in a config
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 You can add details about support contracts for each device in a configuration: the start date, end date, and contract ID. This enables you to easily track the details in a central location so you know when to renew support contracts for each device.
 
 .Steps

@@ -21,7 +21,7 @@ link:reference_new.html[What's new in Converged Systems Advisor]
 
 == Get started
 
-link:task_getting_started.html[Getting started]
+link:task_quick_start[Quick start]
 
 == Learn about Converged Systems Advisor
 

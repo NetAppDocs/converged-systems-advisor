@@ -12,6 +12,7 @@ summary: When you receive an alert about a failed rule, you can view a history o
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 When you receive an alert about a failed rule, you can view a history of what changed in the configuration to help you resolve the issue.
 
 .Steps

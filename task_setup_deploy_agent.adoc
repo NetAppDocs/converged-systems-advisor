@@ -70,7 +70,7 @@ The command generates two prompts and shows the required format for the proxy en
 +
 Here's the prompt for the HTTP proxy:
 +
-image:screenshot_http_proxy.gif[A screenshot that shows the HTTP proxy prompt.]
+image:screenshot_http_proxy.png[A screenshot that shows the HTTP proxy prompt.]
 . Once the network is up, wait approximately 5 minutes for the system to update and start.
 +
 A broadcast message appears on the console when the agent is operational.

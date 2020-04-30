@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: task_add_infrastructure.html
+keywords: add, infrastructure, FlexPod, configuration, Cisco, ACI, UCS, server, FlexPod, converged, infrastructure, sharing, portal
+summary: Add infrastructure to the portal.
+---
+
+= Add infrastructure to the portal
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+After you configure the agent, it sends information about each FlexPod device to the Converged Systems Advisor portal. You must now select each of those components in the portal to create an entire infrastructure that you can monitor.
+
+.Steps
+. In the https://csa.netapp.com/[Converged Systems Advisor portal^], click *Add Infrastructure*.
+. Complete the steps to add the infrastructure:
+.. Enter basic details about the infrastructure.
++
+If you are adding a Cisco ACI Infrastructure, enter *yes* when asked if your FlexPod uses Cisco UCS Manager; and enter *Nexus switch in ACI mode* when asked the type of Network Configuration your FlexPod contains.
+.. Select each device that is part of the FlexPod configuration.
++
+TIP: When you select a device, the Eligibility column displays either *Eligible* or *Not Eligible*. A device is not eligible if it was discovered by a different agent.
+
++
+Once you have selected all of the required components, you should see a green checkmark next to each device type.
+
+image:screenshot_add_infrastructure_pikesupdate.gif[Shows four devices selected in the table and green checkmarks for each, which indicates that you have selected all of the required components.]
+
+.. Add your link:concept_licensing.html[Converged Systems Advisor serial number] to unlock key functionality.
+.. Review the summary, accept the terms of the license agreement, and click *Add Infrastructure*.
+
+.Result
+Converged Systems Advisor adds the infrastructure to the portal and starts collecting configuration data about each device. Wait a few minutes for the agent to collect information from the devices.
+
+== Sharing an infrastructure with other users
+Sharing a converged infrastructure enables another person to log in to the Converged Systems Advisor portal so they can view and monitor the configuration. The person who you share the infrastructure with must have a https://mysupport.netapp.com[NetApp Support Site^] account.
+
+.Steps
+. In the Converged Systems Advisor portal, click the *Settings icon*, and then click *Users*.
++
+image:screenshot_settings.gif[Shows the settings menu, which contains a link to the Users page.]
+. Select the configuration from the User table.
+. Click the image:screenshot_share_icon.gif[The icon for sharing an infrastructure.] icon.
+. Enter one or more email addresses next to the user role that you want to provide.
++
+link:reference_user_roles.html[View the differences between each role].
++
+TIP: You can enter multiple email addresses in a single field by pressing *Enter* after the first email address.
+
+. Click *Send*.
+
+.Result
+The user should receive an email that contains instructions for accessing Converged Systems Advisor.

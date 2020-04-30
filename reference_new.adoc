@@ -17,6 +17,59 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
 
+== 30 April 2020
+This release includes the following enhancements:
+
+* <<Upgrade Advisor>>
+* <<Cluster interconnect switch>>
+* <<Capacity card enhancements>>
+* <<System diagram alerts>>
+
+=== Upgrade Advisor
+Now you can check compatibility for your VMWare vCenter and ONTAP versions with your Nexus and UCS components. To check compability, use Upgrade Advisor in the dashboard under Firmware Interoperability. All versions you see are supported.
+image:screenshot_upgrade_advisor_screen_no_change.png[Image shows upgrade advisor screen with compatibility selections]
+
+=== Cluster interconnect switch
+In the portal, we added cluster interconnect switch (CIS) under Firmware Interoperability in the Dashboard view. Now you can monitor the supportability of ONTAP cluster interconnect switches for the following models:
+
+* Cisco Nexus 3132Q-V
+* Cisco Nexus 3232C
+* Cisco Nexus 92300YC
+
+image:screenshot_firmware_interoperability_CIS.png[Image shows highlight of cluster interconnect switch in firmware interoperability]
+
+In the agent, you can now add a cluster interconnect switch as a device in the Add a device drop-down menu.
+
+image:screenshot_add_device_cis.png[Image shows add a device drop-down menu in the agent]
+
+=== Capacity card enhancements
+We also added links to network port utilization and UCS Blade Server utilization to help you monitor and expand your FlexPod infrastructure. In the Dashboard view, when you go to Capacity, you'll see two new links.
+image:screenshot_capacity_card_with_port_and_UCS_blade_utilization.png[Image shows capacity card with new links to port and UCS blade utilization]
+
+Port Utilization links to detailed information for interfaces in the Network tier.
+image:screenshot_network_port_utilization_screen.png[Image shows network port utilization details screen under network]
+
+UCS Blade Server Utilization links to detailed information for blades in the Compute tier.
+image:screenshot_compute_detailed_information_for_UCS_blade_utilization.png[Image shows compute detailed information for UCS blade utilization]
+
+=== System diagram alerts
+You'll now see alerts in the diagram views of your system so you can monitor your infrastructure better.
+image:screenshot_diagram_with_alert_bubble.jpg[Image shows diagram view with alert bubble]
+
+=== Fixed issues
+The following known issues have been fixed in this release:
+
+[cols=2*,options="header",cols="12,53"]
+|===
+
+| Bug ID
+| Description
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405[1253405^]
+| Nexus switch port status might be displayed incorrectly in Converged Systems Advisor.
+
+|===
+
 == 3 February 2020
 
 This release includes the following enhancements:
@@ -151,81 +204,3 @@ The following known issues have been fixed in this release:
 | Power Supply information for a rack mounted server might be displayed incorrectly in CSA
 
 |===
-
-
-== 17 January 2019
-
-This release includes the following new features and enhancements:
-
-* <<Support for new FlexPod devices>>
-* <<Detailed information about hosts and virtual machines>>
-* <<Simplified experience when adding an infrastructure>>
-* <<Device import using a file>>
-* <<Integration with NetApp Active IQ>>
-
-=== Support for new FlexPod devices
-
-Converged Systems Advisor now supports the following FlexPod devices:
-
-* Cisco UCS C-Series Rack Servers
-* Nexus 3000 series switches
-* Cisco UCS switches directly attached to NetApp controllers
-
-For a complete list of supported devices, see the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
-
-=== Detailed information about hosts and virtual machines
-
-Converged Systems Advisor now provides more information about your virtualization environment. You can drill down to view information about individual hosts and virtual machines, including diagrams, an inventory list, and a rules summary.
-
-image:screenshot_virtualization.gif[A screenshot that shows Host and Virtual Machines available in a drop-down list when you click Virtualization.]
-
-=== Simplified experience when adding an infrastructure
-
-It's now easier to add an infrastructure to Converged Systems Advisor. The portal enables you to enter the information step by step:
-
-image:screenshot_add_infrastructure_overview.gif[A screenshot that shows the Add Infrastructure page. Four steps are available in the process: adding basic details, selecting the devices, adding a license, and reviewing a summary.]
-
-link:task_getting_started.html#adding-an-infrastructure-to-the-portal[Learn how to add an infrastructure to Converged Systems Advisor].
-
-=== Device import using a file
-
-You can now configure the Converged Systems Advisor agent to discover your FlexPod infrastructure by importing a file that includes information about each device. Importing the devices is an alternative to manually adding each device, one by one.
-
-image:screenshot_import_devices.gif[]
-
-link:task_getting_started.html#configuring-the-agent-to-discover-your-flexpod-infrastructure[Learn how to configure the agent to discover your FlexPod infrastructure].
-
-=== Integration with NetApp Active IQ
-
-You can now launch Active IQ from Converged Systems Advisor. The following example shows an Active IQ link available in the Storage page:
-
-image:screenshot_active_iq.gif[A screenshot that shows the Active IQ link in the Storage page.]
-
-=== Fixed issues
-
-The following known issues have been fixed in this release:
-
-[cols=2*,options="header",cols="8,50"]
-|===
-
-| Bug ID
-| Description
-
-| 4671
-| Firefox might stop responding when browsing the Converged Systems Advisor portal.
-
-| 4500
-| The Converged Systems Advisor portal does not log you out after the timeout interval has expired. You remain logged in, but cannot see your FlexPod systems.
-
-| 2794
-| Converged Systems Advisor displays "Pass" for the rule titled "VMware tools check" even though VMware tools was not installed on the virtual machine.
-
-|===
-
-== 13 September 2018
-
-This release of Converged Systems Advisor includes the following new features:
-
-* A new user interface and user experience to simplify customers' FlexPod operations
-* Health and best practices validation for VMware virtualization
-* Support for Cisco MDS switches with expanded Fibre Channel support

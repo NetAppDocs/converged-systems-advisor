@@ -5,7 +5,7 @@ keywords: networking, ip address, static, static ip, agent
 summary: If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
 ---
 
-= Setting a static IP address on the agent
+= Set a static IP address on the agent
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -60,7 +60,7 @@ In nano, you enter *ctrl + o* followed by *ctrl + x* to save.
 
 . Enter `vi/etc/resolv.conf` to open the configuration file.
 
-. Add `nameserver <ip_address>` to the top of the file. 
+. Add `nameserver <ip_address>` to the top of the file.
 
 . Enter `# ifup eth0` to start the network interface.
 

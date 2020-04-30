@@ -1,0 +1,91 @@
+---
+sidebar: sidebar
+permalink: task_create_accounts_flexpod_devices.html
+keywords: create, accounts, FlexPod, devices, support, accounts, account, configuration, registering, FlexPod, VMware, ESXi server, connection, connectivity, agent, portal
+summary: To get started, set up accounts for FlexPod devices.
+---
+
+= Create accounts for FlexPod devices
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+To get started, set up accounts for FlexPod devices:
+
+•	CISCO UCS Manager
+•	CISCO Nexus switches
+•	ONTAP
+•	VMware
+•	APIC
+
+The agent uses these accounts to collect configuration from each device.
+
+== Create a read-only account for Cisco UCS Manager
+
+.Steps
+. Log in to Cisco UCS Manager.
+. Create a locally authenticated user named _csa-readonly_.
++
+TIP: All new users are read-only by default.
+
+== Create a read-only account for your Nexus switches
+
+.Steps
+. Log in to each Nexus switch using SSH or telnet.
+. Enter global configuration mode:
++
+ configure terminal
+.. Create a new user:
++
+ username [name] password [password] role [role]
+.. Save the configuration:
++
+ copy running configuration startup configuration
+
+If you are using a TACACS+ server and you need to grant CSA user privileges, go to link:task_grant_user_privileges.html[Granting CSA user privileges using a TACACS+ server].
+
+== Create an admin account for ONTAP
+
+.Steps
+. Log in to OnCommand System Manager and click the settings icon:
++
+image:screenshot_system_manager_settings.gif[The settings icon in System Manager.].
+. On the Users page, click *Add*.
+. Enter a user name and password and add *ssh*, *ontapi* and *console* as user login methods with admin access.
++
+image:screenshot_system_manager_add_user.gif[Shows the Add User screen in System Manager, in which a new ONTAP user has ssh and ontapi permissions.]
+
+== Create a read-only account for VMware
+
+.Steps
+. Log in to vCenter.
+. In the vCenter menu, choose *Administration*.
+. Under roles, choose *Read-only*.
+. Click the icon for *Clone role action* and change the name to *CSA*.
+//. Name the cloned role *CSAREADONLY*.
+. Select the newly created *CSA* role.
+. Click the *Edit role* icon.
+. Under *Edit role*, choose *Global* and then check *Licenses*.
+. On the sidebar, select *Single sign on->Users and groups->Create a new user*.
+. Name the new user *CSARO* under DOMAIN vpshere.local.
+. On the sidebar, select *Global Permissions* under *Access Control*.
+. Choose the user *CSARO* and assign ROLE *CSA*.
+. Log in to the Web Client.
++
+Use user ID: *CSARO@vsphere.local* and previously created password.
+
+== Create a read-only account on the APIC
+
+.Steps
+. Click *Admin*.
+. Click *Create new local users*.
+. Under *User Identity*, enter the user information.
+. Under *Security* select all security domain options.
+. Click *+* to add user certificates and SSH keys if needed.
+. Click *Next*.
+. Click *+* to add roles for your domain.
+. Select the *Role Name* from the dropdown menu.
+. Select *Read* for the *Role Privilege Type*.
+. Click *Finish*.

@@ -5,7 +5,7 @@ keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS
 summary: To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add the converged infrastructure to the portal.
 ---
 
-= Getting started with Converged Systems Advisor for customers
+= Get started with Converged Systems Advisor for customers
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,7 +17,7 @@ To get started with Converged Systems Advisor, you must prepare your environment
 
 You might want to link:concept_architecture.html[learn how Converged Systems Advisor works] before you get started.
 
-== Preparing your environment
+== Prepare your environment
 
 Preparing your environment includes verifying support for your configuration, creating accounts for the agent, and registering for a NetApp Support Site account.
 

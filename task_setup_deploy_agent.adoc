@@ -72,6 +72,7 @@ Enter the HTTP proxy below using the format:
 `http://user:password@proxy-server:proxy-port`
 +
 Leave blank if no HTTP proxy is required for internet access.
+
 . Once the network is up, wait approximately 5 minutes for the system to update and start.
 +
 A broadcast message appears on the console when the agent is operational.

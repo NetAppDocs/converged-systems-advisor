@@ -105,7 +105,7 @@ The agent requires credentials to collect configuration data. You must provide t
 
 .Steps
 . Open a web browser and enter the IP address of the agent virtual machine.
-. Log in to the agent by entering the customer’s NetApp Support Site account user name and password
+. Log in to the agent with the customer’s NetApp Support Site account user name and password.
 +
 NOTE: For any partners deploying a licensed version of CSA on behalf of their customer, it’s important for the customer’s account to be used in this step (for NetApp Support and records management).
 

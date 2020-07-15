@@ -33,13 +33,13 @@ TIP: All new users are read-only by default.
 == Create a read-only account for your Nexus switches
 
 .Steps
-. Log in to each Nexus switch using SSH or telnet.
+. Log in to each Nexus switch using SSH or Telnet.
 . Enter global configuration mode:
 +
  configure terminal
 .. Create a new user:
 +
- username [name] password [password] role [role]
+ username [name] password [password] role network-operator
 .. Save the configuration:
 +
  copy running configuration startup configuration

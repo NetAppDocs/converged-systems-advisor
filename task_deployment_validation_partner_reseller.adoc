@@ -37,8 +37,7 @@ Partners and resellers use their own NetApp credentials to log in to their custo
 
 . Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] using your NetApp credentials.
 
-. Click *Select a CI*, then enter the CI name.
-+ The dashboard for the CI is displayed.
+. Click *Select a CI*, then enter the CI name.  The dashboard for the CI is displayed.
 
 As a partner or reseller you can validate your customer's infrastructure using the follow methods:
 
@@ -46,7 +45,7 @@ As a partner or reseller you can validate your customer's infrastructure using t
 
 ** *Firmware Interoperability* displays the installed software versions.  Click each heading to view additional details.
 
-** *Support Contract** shows when contracts expire. Click *View Details* for additional information.
+** *Support Contract* shows when contracts expire. Click *View Details* for additional information.
 
 ** *Agent Status* displays details about the agent including the devices being monitored.
 

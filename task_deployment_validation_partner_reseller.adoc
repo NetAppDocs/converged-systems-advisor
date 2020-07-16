@@ -25,11 +25,9 @@ Partners and resellers use their own NetApp credentials to log in to their custo
 
 * You created accounts on FlexPod devices.
 
-* You downloaded and installed the agent.  Refer to link:task_getting_started.html[Get started with Converged System Advisor for customers].
+* You downloaded and installed the agent.  Refer to "Get started with Converged System Advisor for customers". ///NEED TO ADD INTERNAL LINK///
 
-//comment//
-
-* You set up the networking for the agent and installed an SSL certificate on the agent.
+* You set up the networking for the agent, and optionally, you installed an SSL certificate on the agent.
 
 * With your NetApp credentials, you created the CI for your customer to add the infrastructure to the portal.
 
@@ -67,26 +65,6 @@ If needed, <<Reviewing the history for an infrastructure,review the configuratio
 .After you finish
 
 The status for the rules that you addressed should display as Pass after the agent's next collection period.
-
-
-== Display suppressed rules
-.Steps
-
-. Click the *Settings* icon and select *Suppressed Rules*.
-+
-image:screenshot_suppressed_rules.gif[Shows settings icon which opens menu to select suppressed rules.]
-
-. Select the suppressed rules that you want to begin displaying.
-
-. Click the *Alerts* icon.
-+
-image:screenshot_rules_suppress.gif[Shows the alerts icon above the table which enables you to suppress rules.]
-
-. Select *End Suppression* and then click *Submit*.
-
-.Result
-
-Alerts are enabled for the selected rule and the rule is displayed in the Rules table and dashboard.
 
 = Generate a deployment validation report for partners
 :hardbreaks:

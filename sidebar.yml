@@ -39,8 +39,6 @@ entries:
         url: /task_configure_notifications.html
       - title: Set a static IP on the agent
         url: /task_setting_static_ip.html
-      - title: Validate deployment for partners and resellers
-        url: /task_deployment_validation_partners_resellers.html
   - title: Monitoring your infrastructure
     entries:
       - title: Review your infrastructure history
@@ -51,6 +49,8 @@ entries:
         url: /task_generate_reports.html
       - title: Track support contracts
         url: /task_track_contracts.html
+  - title: Validate deployment for partners and resellers
+    url: /task_deployment_validation_partners_resellers.html
   - title: Troubleshooting
     url: /task_troubleshooting.html
   - title: Related links

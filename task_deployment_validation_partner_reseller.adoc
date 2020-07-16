@@ -15,17 +15,13 @@ summary: As a partner or reseller, you can validate the deployment of a client's
 [.lead]
 As a partner or reseller, you can validate the deployment of your customer's infrastructure by reviewing alerts for failed rules and warnings. You can also generate a deployment validation report.
 
-== Prepare for the validation process
-
-Partners and resellers use their own NetApp credentials to log in to their customers' systems to start the validation process.
-
 .Before you start
 
 * You have installed a new FlexPod at your customer site, or you are working with an existing FlexPod.
 
 * You created accounts on FlexPod devices.
 
-* You downloaded and installed the agent.  Refer to "Get started with Converged System Advisor for customers". ///NEED TO ADD INTERNAL LINK///
+* You downloaded and installed the agent.  Refer to link:task_getting_started.html[Get started with Converged System Advisor].
 
 * You set up the networking for the agent, and optionally, you installed an SSL certificate on the agent.
 
@@ -37,83 +33,18 @@ Partners and resellers use their own NetApp credentials to log in to their custo
 
 .Steps
 
+Partners and resellers use their own NetApp credentials to log in to their customers' systems to start the validation process.
+
 . Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] using your NetApp credentials.
 
+As a partner or reseller you can validate your customer's infrastructure using the follow methods:
 
-== Review alerts for failed rules and warnings
+.  On the Dashboard, you can validate various aspects of the infrastructure:
 
-Converged Systems Advisor continuously monitors the infrastructure and generates warnings and failures to ensure that the system is configured and performing to best practices.
+.. *Firmware Interoperability" displays the installed software versions.  Click each heading to view additional details.
 
-.Steps
+.. *Health* graphically displays the status of rules for storage, compute, network, and virtualization capabilities of the infrastructure. Click the colored areas of the graphics to view additional details.
 
-. After you log in, click *Rules*.
-+
-The Rules page displays a summary of all rules. The status for each rule is either *Pass*, *Warning*, or *Fail*.
+.. *Rules Summary* shows you alerts for failed rules and warnings. Click the arrows to the left of each row or click the device name to view additional details.
 
-. Click the filter icon in the Status column and select *Fail*, *Warning*, or both.
-+
-image:screenshot_rules_filter.gif[Shows the filter icon which enables you to filter the table so it shows only the rules that passed, failed, or include warnings.]
-
-. Review details about individual rules by clicking the arrow next to the Status column.
-+
-image:screenshot_rules_information.gif[Shows details about a rule, including the description, impact, and resolution.]
-
-. Follow the instructions in the resolution to fix the issue.
-+
-If needed, <<Reviewing the history for an infrastructure,review the configuration history>> for the infrastructure to help you resolve the issue.
-
-.After you finish
-
-The status for the rules that you addressed should display as Pass after the agent's next collection period.
-
-= Generate a deployment validation report for partners
-:hardbreaks:
-:nofooter:
-:icons: font
-:linkattrs:
-:imagesdir: ./media/
-
-[.lead]
-NetApp partners can run a deployment validation to verify that a FlexPod converged infrastructure is configured correctly. Partners can then hand off the report to customers.
-
-.Steps
-
-. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^].
-
-. Expand the customer's configuration from the Customer List.
-+
-image:screenshot_partner_customer_list.gif[Shows three converged infrastructures for a customer.]
-
-. Under Deployment Validation Report, click *Generate*.
-
-. Choose whether you want to view the report in your browser, in a PDF, or via email.
-
-. Review the report and correct any interoperability issues and deployment validation errors.
-+
-*Example*
-+
-In this sample configuration, the firmware versions of the Nexus switches are not supported:
-+
-image:screenshot_validation_interop.gif[Shows the interoperability section of the Deployment Validation Report. It includes two switches with unsupported firmware versions.]
-+
-Four validation rules also failed due to issues with switch connectivity:
-+
-image:screenshot_validation_errors.gif[Shows the errors section of the Deployment Validation Report. The fabric interconnect does not uplink into the corresponding Nexus Fibre Channel fabric.]
-+
-Upgrading the firmware can correct the interoperability of the configuration and adding the links can correct the failed validation rules.
-
-. After you correct the issues, collect data to ensure that Converged Systems Advisor has the latest configuration data:
-
-.. Select the converged infrastructure.
-
-.. In the upper right, click *Collect*.
-+
-image:screenshot_collect_button.gif[Shows the collect button in the upper right that is available after selecting a converged infrastructure.]
-
-. Generate the report again to verify that you have corrected the issues.
-
-. Send the final Deployment Validation Report to your customer.
-
-.Result
-
-The converged infrastructure is now set up according to best practices.
+. In the action bar, select *Reports*, then *Health Report*, to generate a detailed Converged System Health Report.  You can view it in the browser, download it as a PDF file, or share it via email.

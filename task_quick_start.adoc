@@ -32,7 +32,7 @@ link:task_create_accounts_flexpod_devices.html[Create accounts on Flexpod device
 Deploy the Converged Systems Advisor agent on a VMware ESXi server. The agent collects configuration data about each device in your FlexPod converged infrastructure and sends that data to the Converged Systems Advisor portal.
 link:task_setup_deploy_agent.html[Deploy the agent].
 
-==== image:number4.png[number4] Add/Share infrastructure in the portal
+==== image:number4.png[number4] Add/share infrastructure in the portal
 
 [role="quick-margin-para"]
 Add each FlexPod device to the Converged Systems Advisor portal to create an entire infrastructure that you can monitor. You can also share a converged infrastructure to enable another person to log in to the portal so they can view and monitor the configuration.
@@ -50,8 +50,8 @@ link:task_grant_user_privileges.html[Grant CSA user privileges using a TACACS+ s
 With a Premium license, you can set up notifications which alert you about changes to your FlexPod infrastructure through email notifications.
 link:task_configure_notifications.html[Configure notifications]
 
-==== image:number7.png[number7] Set a static ip address
+==== image:number7.png[number7] Set a static IP address
 
 [role="quick-margin-para"]
 If your environment does not have a DHCP server, you can set a static IP address on the Converged Systems Advisor agent.
-link:task_setting_static_ip.html[Set a static ip address on the agent]
+link:task_setting_static_ip.html[Set a static IP address on the agent]

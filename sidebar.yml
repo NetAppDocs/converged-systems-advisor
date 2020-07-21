@@ -21,7 +21,7 @@ entries:
         url: /concept_security.html
       - title: User roles
         url: /reference_user_roles.html
-  - title: Getting started
+  - title: Getting started 
     entries:
       - title: Quick start
         url: /task_quick_start.html

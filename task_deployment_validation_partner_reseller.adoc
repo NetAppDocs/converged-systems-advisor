@@ -21,23 +21,30 @@ As a partner or reseller, you can validate the deployment of your customer's inf
 
 * You created accounts on FlexPod devices.
 
-* You downloaded and installed the agent.  Refer to link:task_setup_deploy_agent.html[Set up and deploy the agent].
+* If you are using a TACACS+ server, you granted CSA user privileges.
+
+* You downloaded and installed the agent.
++
+Refer to link:task_setup_deploy_agent.html[Set up and deploy the agent].
 
 * You set up the networking for the agent, and optionally, you installed an SSL certificate on the agent.
 
 * With your NetApp credentials, you created the CI for your customer to add the infrastructure to the portal.
 
++
+Refer to link:task_add_infrastructure[Add infrastructure to the portal] to create a CI in the CSA portal.
+
 * Optionally, you shared the infrastructure with other users.
 
-* If you are using a TACACS+ server, you granted CSA user privileges.
+
 
 .Steps
 
-Partners and resellers use their own NetApp credentials to log in to their customers' systems to start the validation process.
+Partners and resellers use their own NetApp credentials to log in to the CSA portal to start the validation process.
 
 . Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] using your NetApp credentials.
 
-. Click *Select a CI*, then enter the CI name.  The dashboard for the CI is displayed.
+. Click *Select a CI*, and then click on the appropriate CI for the customer, or type the CI name in the search box. The dashboard for the CI is displayed.
 
 As a partner or reseller you can validate your customer's infrastructure using the follow methods:
 

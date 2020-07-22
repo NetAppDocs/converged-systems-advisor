@@ -26,23 +26,24 @@ Verify support for your configuration.  link:task_prepare_environment.html[Prepa
 Set up accounts in Cisco UCS Manager, on your Cisco Nexus switches, for your ONTAP systems, for VMware, and on the APIC. These accounts are used by the agent to collect configuration data.
 link:task_create_accounts_flexpod_devices.html[Create accounts on Flexpod devices].
 
-==== image:number3.png[number3] Set up and deploy the agent
+==== image:number3.png[number 3] Grant CSA user privileges using a TACACS+ server
+
+[role="quick-margin-para"]
+For those who use a TACACS+ server, you need to grant CSA user privileges for your switches, create a user privilege group and grant the group access to the specific set up commands needed by CSA.
+link:task_grant_user_privileges.html[Grant CSA user privileges using a TACACS+ server]
+
+==== image:number4.png[number 4] Set up and deploy the agent
 
 [role="quick-margin-para"]
 Deploy the Converged Systems Advisor agent on a VMware ESXi server. The agent collects configuration data about each device in your FlexPod converged infrastructure and sends that data to the Converged Systems Advisor portal.
 link:task_setup_deploy_agent.html[Deploy the agent].
 
-==== image:number4.png[number4] Add/share infrastructure in the portal
+==== image:number5.png[number 5] Add/share infrastructure in the portal
 
 [role="quick-margin-para"]
 Add each FlexPod device to the Converged Systems Advisor portal to create an entire infrastructure that you can monitor. You can also share a converged infrastructure to enable another person to log in to the portal so they can view and monitor the configuration.
 link:task_add_infrastructure.html[Add and share infrastructure in the portal].
 
-==== image:number5.png[number5] Grant CSA user privileges using a TACACS+ server
-
-[role="quick-margin-para"]
-For those who use a TACACS+ server, you need to grant CSA user privileges for your switches, create a user privilege group and grant the group access to the specific set up commands needed by CSA.
-link:task_grant_user_privileges.html[Grant CSA user privileges using a TACACS+ server]
 
 ==== image:number6.png[number6] Configure notifications
 

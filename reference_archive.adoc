@@ -17,6 +17,16 @@ NetApp periodically updates Converged Systems Advisor to bring you new features,
 
 To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
 
+This archive contains information from the following releases:
+
+* <<30 April 2020>>
+* <<3 February 2020>>
+* <<7 November 2019>>
+* <<24 July 2019>>
+* <<25 April 2019>>
+* <<28 March 2019>>
+* <<17 January 2019>>
+* <<13 September 2018>>
 
 == 30 April 2020
 This release includes the following enhancements:

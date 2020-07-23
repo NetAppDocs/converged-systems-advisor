@@ -16,5 +16,25 @@ summary: NetApp periodically updates Converged Systems Advisor to bring you new 
 NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 
 To confirm FlexPod components are supported by the CSA agent, reference the http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^] (IMT).
-== /// NEED TO UPDATE FOR JULY RELEASE ///
-Add new features description and list of fixed bugs.
+
+The release includes the following enhancements:
+
+* <<New functionality for storage change detection (diffs)>>
+* <<Expanded configuration assurance for cluster interconnect switches>>
+* <<Initial coverage of NVM3 designs>>
+
+== New functionality for storage change detection (diffs)
+
+Now you can detect changes that have occurred on the storage system.  To check for change, from the *Storage Inventory* pages, click *View Configuration Difference*.  Then, select a previous configuration data and time, which will be compared to the most recent storage configuration.  Any changes that have occurred will be highlighted for quick review.
+
+== Expanded configuration assurance for cluster interconnect switches
+
+In the Converged Systems Advisor portal, the configuration assurance checks have been expanded to monitor the supportability of ONTAP cluster interconnect switching for the following models:
+
+* Cisco Nexus 3132Q-V
+* Cisco Nexus 3232C
+* Cisco Nexus 92300YC
+
+== Initial coverage of NVM3 designs
+
+Initial configuration assurance checks have been added to monitor supportability of NVM3 ONTAP storage designs in FlexPod.

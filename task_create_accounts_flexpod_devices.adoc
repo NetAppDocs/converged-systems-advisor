@@ -14,13 +14,14 @@ summary: To get started, set up accounts for FlexPod devices.
 
 To get started, set up accounts for FlexPod devices:
 
-•	CISCO UCS Manager
-•	CISCO Nexus switches
-•	ONTAP
-•	VMware
-•	APIC
+*	<<Create a read-only account for Cisco UCS Manager>>
+* <<Create a read-only account for Nexus switches>>
+* <<Create an admin account for ONTAP>>
+* <<Create a read-only account for VMware>>
+* <<Create a read-only account on the APIC>>
+* <<Grant CSA user privileges using a TACACS+ server>>
 
-The agent uses these accounts to collect configuration from each device.
+The agent uses these accounts to collect configuration information from each device.
 
 == Create a read-only account for Cisco UCS Manager
 
@@ -30,7 +31,7 @@ The agent uses these accounts to collect configuration from each device.
 +
 TIP: All new users are read-only by default.
 
-== Create a read-only account for your Nexus switches
+== Create a read-only account for Nexus switches
 
 .Steps
 . Log in to each Nexus switch using SSH or Telnet.
@@ -93,17 +94,24 @@ Use user ID: *CSARO@vsphere.local* and previously created password.
 == Grant CSA user privileges using a TACACS+ server
 
 If you are using a TACACS+ server and you need to grant CSA user privileges for your switches, you should create a user privilege group and grant the group access to the specific setup commands needed by CSA.
+
 The following commands should be written into the configuration file for your TACACS+ server.
 
 .Steps
 . Enter the following to create a user privilege group with read-only access:
+
+----
   group=group_name {
     default service=deny
     service=exec{
       priv-lvl=0
     }
   }
+----
+
 . Enter the following to grant access to commands needed by CSA:
+
+----
   cmd=show {
     permit "environment"
     permit "version"
@@ -145,8 +153,13 @@ The following commands should be written into the configuration file for your TA
     permit "vsan usage"
     permit "vsan membership"
     }
+----
+
 . Enter the following to add your CSA user account to the newly created group:
+
+----
   user=user_account{
     member=group_name
     login=file/etc/passwd
   }
+----

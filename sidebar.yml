@@ -21,7 +21,7 @@ entries:
         url: /concept_security.html
       - title: User roles
         url: /reference_user_roles.html
-  - title: Getting started 
+  - title: Getting started
     entries:
       - title: Quick start
         url: /task_quick_start.html
@@ -29,8 +29,6 @@ entries:
         url: /task_prepare_environment.html
       - title: Create accounts for FlexPod devices
         url: /task_create_accounts_flexpod_devices.html
-      - title: Grant user privileges
-        url: /task_grant_user_privileges.html
       - title: Set up and deploy agent
         url: /task_setup_deploy_agent.html
       - title: Add infrastructure in the portal

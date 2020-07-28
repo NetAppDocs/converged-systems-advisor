@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference_archive.html
-keywords: archive, new, features, whats new, enhancements, release notes
+keywords: archive, new, features, what&apos;s new, enhancements, release notes
 summary: NetApp periodically updates Converged Systems Advisor to bring you new features, enhancements, and bug fixes.
 ---
 
@@ -121,7 +121,7 @@ image:screenshot_redcloud_new-aggregate_details.gif[screenshot, width=65%, align
 === Fixed issues
 The following known issues have been fixed in this release:
 
-[cols=2*,options="header",cols="12,53"]
+[cols=2*,options="header", cols="12,53"]
 |===
 
 | Bug ID

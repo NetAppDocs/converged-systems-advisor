@@ -15,17 +15,25 @@ summary: Known issues identify problems that might prevent you from using the se
 [.lead]
 Known issues identify problems that might prevent you from using the service successfully. If a Bugs Online report is available, the bug ID contains a hyperlink to the report.
 
+
 [cols=2*,options="header",cols="12,53"]
 |===
 
 | Bug ID
 | Description
 
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234597[1234597^]
+| Converged Systems Advisor does not remediate the DNS configuration for more than four SVMs.
+
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234603[1234603^]
 | After creating multiple remediation jobs with collection enabled, collection is triggered only for the first remediation job.
 
-| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234597[1234597^]
-| Converged Systems Advisor does not remediate the DNS configuration for more than four SVMs.
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335590[1335590^]
+| The "Storage failover state" CA rule was removed from Converged Systems Advisor.
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335593[1335593^]
+| The version numbers of the Nexus and MDS switches are shown incorrectly under "Upgrade Advisor".
 
 |===
 

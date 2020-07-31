@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+permalink: task_deployment_validation_partners_resellers.html
+keywords: review, alerts, warnings, failed, rules, alerts, history, remediate, remediation, suppress, display, fail, warning, pass, notifications, email
+summary: As a partner or reseller, you can validate the deployment of a client's infrastructure.
+---
+
+= Validate deployment for partners and resellers
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+As a partner or reseller, you can validate the deployment of your customer's infrastructure by reviewing data displayed on the dashboard or by generating a Health report.
+
+.Before you start
+
+* You have installed a new FlexPod at your customer site, or you are working with an existing FlexPod.
+
+* You created accounts on FlexPod devices.
+
+* If you are using a TACACS+ server, you granted CSA user privileges.
+
+* You downloaded and installed the agent.
++
+Refer to link:task_setup_deploy_agent.html[Set up and deploy the agent].
+
+* You set up the networking for the agent, and optionally, you installed an SSL certificate on the agent.
+
+* With your NetApp credentials, you created the CI for your customer to add the infrastructure to the portal.
+
++
+Refer to link:task_add_infrastructure[Add infrastructure to the portal] to create a CI in the CSA portal.
+
+* Optionally, you shared the infrastructure with other users.
+
+
+
+.Steps
+
+Partners and resellers use their own NetApp credentials to log in to the CSA portal to start the validation process.
+
+. Log in to the https://csa.netapp.com/[Converged Systems Advisor portal^] using your NetApp credentials.
+
+. Click *Select a CI*, and then click on the appropriate CI for the customer, or type the CI name in the search box. The dashboard for the CI is displayed.
+
+As a partner or reseller you can validate your customer's infrastructure using the follow methods:
+
+*  On the Dashboard, you can validate various aspects of the infrastructure:
+
+** *Firmware Interoperability* displays the installed software versions.  Click each heading to view additional details.
+
+** *Support Contract* shows when contracts expire. Click *View Details* for additional information.
+
+** *Agent Status* displays details about the agent including the devices being monitored.
+
+** *Capacity* shows the utilization of disk space, network ports, and the UCS blade chassis. Click the links to view details for each utilization.
+
+** *Health* graphically displays the status of rules for storage, compute, network, and virtualization capabilities of the infrastructure. Click the color areas of the graphics to view additional details.
+
+** *Rules Summary* shows you alerts for failed rules and warnings. Click the arrows to the left of each row, or click the device name to view additional details.
+
+* In the action bar, select *Reports->Health Report*, to generate a detailed Converged System Health Report.  You can view it in the browser, download it as a PDF file, or share it via email.

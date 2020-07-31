@@ -33,8 +33,6 @@ entries:
         url: /task_setup_deploy_agent.html
       - title: Add infrastructure in the portal
         url: /task_add_infrastructure.html
-      - title: Grant user privileges
-        url: /task_grant_user_privileges.html
       - title: Configure notifications
         url: /task_configure_notifications.html
       - title: Set a static IP on the agent
@@ -49,6 +47,8 @@ entries:
         url: /task_generate_reports.html
       - title: Track support contracts
         url: /task_track_contracts.html
+  - title: Validate deployment for partners and resellers
+    url: /task_deployment_validation_partners_resellers.html
   - title: Troubleshooting
     url: /task_troubleshooting.html
   - title: Related links

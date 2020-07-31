@@ -5,7 +5,7 @@ keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS
 summary: To get started with Converged Systems Advisor, you must prepare your environment, install and set up the agent, and add the converged infrastructure to the portal.
 ---
 
-= Get started with Converged Systems Advisor for customers
+= Get started with Converged Systems Advisor
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -21,7 +21,7 @@ The release includes the following enhancements:
 
 * <<New functionality for storage change detection (diffs)>>
 * <<Expanded configuration assurance for cluster interconnect switches>>
-* <<Initial coverage of NVM3 designs>>
+* <<Initial coverage of NVMe designs>>
 
 == New functionality for storage change detection (diffs)
 
@@ -35,6 +35,6 @@ In the Converged Systems Advisor portal, the configuration assurance checks have
 * Cisco Nexus 3232C
 * Cisco Nexus 92300YC
 
-== Initial coverage of NVM3 designs
+== Initial coverage of NVMe designs
 
-Initial configuration assurance checks have been added to monitor supportability of NVM3 ONTAP storage designs in FlexPod.
+Initial configuration assurance checks have been added to monitor supportability of NVMe ONTAP storage designs in FlexPod.
